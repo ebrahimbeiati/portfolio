@@ -12,23 +12,22 @@ const About = () => {
           </div>
         </div>
         <div className="max-w-[1000px] w-full  grid sm:grid-cols-2 gap-8 px-4">
-          <div className='sm:text-right text-4xl font-bold text-white'>
-            <p>Hi, I'm Ebrahim, nice to meet you. Please take a look around</p>
+          <div className="sm:text-right text-4xl font-bold text-white">
+            <p className="text-yellow-600">Hi, my name is </p>
+            <h1 className="text-white text-2xl sm:text-4xl font-bold">
+              Ebrahim Beiati-Asl
+            </h1>
+            <h2 className="text-[#8892b0] text-2xl sm:text-4xl font-bold">
+              I am Full Stack Developer.
+            </h2>
           </div>
-          <div className='text-white '>
+          <div className="text-white ">
             <p>
-              I am a Fullstack Developer, passionate about creating dynamic and
-              user-friendly web applications. My portfolio showcases my
-              expertise in both front-end and back-end technologies.On the
-              front-end, I excel at crafting visually appealing and
-              user-friendly interfaces using HTML, CSS, and JavaScript. I
-              leverage popular frameworks and libraries like React, Angular, or
-              Vue.js to build responsive and intuitive user experiences. In the
-              back-end, I am well-versed in server-side programming and database
-              management. Whether it's working with Node.js, Python, Ruby on
-              Rails, or other backend technologies, I can design robust APIs,
-              handle data processing, and ensure smooth communication between
-              the front-end and back-end systems. Summaries this
+              Welcome to my portfolio! I'm a dedicated full-stack developer with
+              a strong passion for coding and innovation. My projects reflect my
+              problem-solving skills, creativity, and attention to detail. I'm
+              excited about my next tech career adventure and the opportunities
+              to contribute my expertise to your team!
             </p>
           </div>
         </div>
