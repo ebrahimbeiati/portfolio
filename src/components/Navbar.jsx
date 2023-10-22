@@ -1,8 +1,6 @@
 import { useState } from "react";
 import React from "react";
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../assets/Logo.png";
 import { Link } from "react-scroll";
 
@@ -11,7 +9,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
   return (
     <div className="fixed w-full h-[80px] Flex justify-between items-center px-4 bg-[#0b0b0b] text-gray-200">
-      <div className="shadow-md shadow-[#111111] hover:scale-110 duration-500">
+      <div className="shadow-md shadow-[#111111] ">
         <img src={Logo} alt="logo_Image" style={{ width: "50px" }} />{" "}
       </div>
 
@@ -89,30 +87,7 @@ const Navbar = () => {
       </ul>
 
       {/*Social Icons*/}
-      <div className=" hidden lg:flex fixed flex-col top-[35%] left-0">
-        <ul>
-          <li className="w-[150px] h-[50px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
-            <a className="flex justify-between items-center " href="/">
-              LinkedIn <FaLinkedin size={30} />
-            </a>
-          </li>
-          <li className="w-[150px] h-[50px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69] ">
-            <a className="flex justify-between items-center " href="/">
-              CV <BsFillPersonLinesFill size={30} />
-            </a>
-          </li>
-          <li className="w-[150px] h-[50px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
-            <a className="flex justify-between items-center " href="/">
-              Github <FaGithub size={30} />
-            </a>
-          </li>
-          <li className="w-[150px] h-[50px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
-            <a className="flex justify-between items-center " href="/">
-              Email <HiOutlineMail size={30} />
-            </a>
-          </li>
-        </ul>
-      </div>
+      
     </div>
   );
 };
