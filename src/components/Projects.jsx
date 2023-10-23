@@ -21,13 +21,13 @@ const Projects = () => {
         className="w-full h-screen text-white bg-slate-800 flex flex-col justify-center items-center"
       >
         <div className="max-w-[1000px] max-auto p-4 flex flex-col w-full h-full">
-          <div className=" py-16 text-center">
+          <div className=" py-12 text-center my-4">
             {" "}
             {/* Added text-center class */}
-            <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-blue-700 text-center">
+            <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-blue-700  text-center">
               Projects
             </p>
-            <p className=" text-center">
+            <p className=" text-center my-4 py-1">
               Check out some of my recent projects
             </p>
           </div>
@@ -37,8 +37,7 @@ const Projects = () => {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 ">
             {/* Grid Item */}
             <div
-             
-              style={{ backgroundImage: `url(${Shopping})` }}
+             style={{ backgroundImage: `url(${Shopping})` }}
               className=" card shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center text-bold items-center max-auto content-div"
             >
               <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center">

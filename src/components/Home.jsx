@@ -102,7 +102,7 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen">
+    <div name="home" className="w-full h-screen ">
       <div className="w-full h-full flex flex-col justify-center items-center">
         <div className="moving-images">
           <img src={image1} alt="" className="image" />
@@ -115,14 +115,14 @@ const Home = () => {
           <img src={image8} alt="" className="image" />
         </div>
     </div>
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center ">
     <Link
       to="project"
       smooth={true}
       duration={500}
     >
         <button
-          className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-blue-700 hover:border-blue-700"
+          className="text-white  border-2 px-6 py-4 my-2 flex items-center hover:bg-blue-700 hover:border-blue-700"
           type="button">
           View Projects{" "}
           <span className="group-hover:rotate-90 duration-300">
