@@ -14,28 +14,28 @@ const Navbar = () => {
       </div>
 
       {/* menu */}
-      <ul className="hidden md:flex">
-        <li>
+      <ul className="hidden md:flex ">
+        <li className="link-hover">
           <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li>
+        <li className="link-hover">
           <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li>
+        <li className="link-hover">
           <Link to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li>
+        <li className="link-hover">
           <Link to="project" smooth={true} duration={500}>
             Projects
           </Link>
         </li>
-        <li>
+        <li className="link-hover">
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
@@ -55,30 +55,30 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl link-hover">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl link-hover">
           {" "}
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl link-hover">
           {" "}
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl link-hover">
           {" "}
           <Link onClick={handleClick} to="Project" smooth={true} duration={500}>
-            projects
+            Projects
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl link-hover">
           {" "}
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
@@ -87,7 +87,6 @@ const Navbar = () => {
       </ul>
 
       {/*Social Icons*/}
-      
     </div>
   );
 };

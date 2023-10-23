@@ -98,6 +98,7 @@ import image5 from "../assets/background/image5.avif";
 import image6 from "../assets/background/image6.jpeg";
 import image7 from "../assets/background/image7.jpeg";
 import image8 from "../assets/background/image9.avif";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -115,6 +116,11 @@ const Home = () => {
         </div>
     </div>
     <div className="w-full flex justify-center">
+    <Link
+      to="project"
+      smooth={true}
+      duration={500}
+    >
         <button
           className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-yellow-500 hover:border-yellow-500"
           type="button">
@@ -123,6 +129,7 @@ const Home = () => {
             <HiArrowNarrowRight className="ml-3" />
           </span>
         </button>
+        </Link>
       </div>
     </div>
   );

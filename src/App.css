@@ -156,3 +156,28 @@
     transform: translateX(-800%); /* Adjust this value based on the width of all images */
   }
 }
+
+
+.link-hover {
+  position: relative;
+  text-decoration: none;
+}
+
+.link-hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4%; /* Adjust the height as needed */
+  background: blue; /* Change the color to the desired color */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease;
+}
+
+.link-hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
