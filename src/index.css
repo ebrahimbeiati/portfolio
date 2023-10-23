@@ -51,7 +51,43 @@
 
 .image-2 {
   position: absolute;
-  animation: moveImage2 15s linear infinite;
+  animation: moveImage2 20s linear infinite;
+  /* Add styles, such as width, height, and initial position */
+}
+
+.image-3 {
+  position: absolute;
+  animation: moveImage3 20s linear infinite;
+  /* Add styles, such as width, height, and initial position */
+}
+
+.image-4 {
+  position: absolute;
+  animation: moveImage4 20s linear infinite;
+  /* Add styles, such as width, height, and initial position */
+}
+
+.image-5 {
+  position: absolute;
+  animation: moveImage5 20s linear infinite;
+  /* Add styles, such as width, height, and initial position */
+}
+
+.image-6 {
+  position: absolute;
+  animation: moveImage6 20s linear infinite;
+  /* Add styles, such as width, height, and initial position */
+}
+
+.image-7 {
+  position: absolute;
+  animation: moveImage7 20s linear infinite;
+  /* Add styles, such as width, height, and initial position */
+}
+
+.image-8 {
+  position: absolute;
+  animation: moveImage8 20s linear infinite;
   /* Add styles, such as width, height, and initial position */
 }
 

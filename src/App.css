@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'tailwindcss/tailwind.css';
+
+
+
+
+@layer base {
+    body{
+        @apply bg-gray-200 text-black font-sans antialiased transition;
+        
+    }
+    li {
+        list-style: none;
+        margin: 5px auto;
+        @apply px-4;
+        @apply cursor-pointer;
+    }
+}
+.content-div{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+
+}
+.content-div:hover{
+    background-image: linear-gradient(
+        to right,
+        rgba(165, 188, 238, 0.5),
+        hsla(242, 82%, 66%, 0.8)
+    );
+}
+
+/* .moving-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  animation: moveImages 50s linear infinite;
+  width: 100%; 
+  height: 100%; 
+}
+
+
+.image-2 {
+  position: absolute;
+  animation: moveImage2 55s linear infinite;
+}
+.image-3 {
+  position: absolute;
+  animation: moveImage2 60s linear infinite;
+}
+.image-4 {
+  position: absolute;
+  animation: moveImage2 47s linear infinite;
+}
+.image-5 {
+  position: absolute;
+  animation: moveImage2 46s linear infinite;
+}
+.image-6 {
+  position: absolute;
+  animation: moveImage2 15s linear infinite;
+}
+.image-7 {
+  position: absolute;
+  animation: moveImage2 15s linear infinite;
+}
+.image-8 {
+  position: absolute;
+  animation: moveImage2 10s linear infinite;
+}
+
+@keyframes moveImages {
+  0% {
+    transform: translateX(0);
+  }
+  12.5% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-200%);
+  }
+  37.5% {
+    transform: translateX(-300%);
+  }
+  50% {
+    transform: translateX(-400%);
+  }
+  62.5% {
+    transform: translateX(-500%);
+  }
+  75% {
+    transform: translateX(-600%);
+  }
+  87.5% {
+    transform: translateX(-700%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+.moving-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 800%; /* Adjust the width to fit the number of images */
+  overflow: hidden;
+  z-index: -1;
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  animation: moveImages 80s linear infinite; /* Adjust the duration based on the number of images */
+  width: 12.5%; /* Adjust the width for each image based on the number of images */
+  height: 100%;
+}
+
+/* Define keyframes for the animation */
+@keyframes moveImages {
+  0% {
+    transform: translateX(0);
+  }
+  12.5% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-200%);
+  }
+  37.5% {
+    transform: translateX(-300%);
+  }
+  50% {
+    transform: translateX(-400%);
+  }
+  62.5% {
+    transform: translateX(-500%);
+  }
+  75% {
+    transform: translateX(-600%);
+  }
+  87.5% {
+    transform: translateX(-700%);
+  }
+  100% {
+    transform: translateX(-800%); /* Adjust this value based on the width of all images */
+  }
+}
