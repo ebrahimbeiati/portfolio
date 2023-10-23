@@ -11,18 +11,23 @@ import Portfolio from '../assets/screenshots/Portfolio.png';
 const Projects = () => {
    
     return (
+      // <div
+      //   name="project"
+      //   className="w-full h-screen project-card text-white bg-slate-800 flex flex-col justify-center items-center"
+      // >
+      //   <div className="max-w-[1000px] max-auto p-4 flex flex-col  w-full h-full">
       <div
         name="project"
         className="w-full h-screen text-white bg-slate-800 flex flex-col justify-center items-center"
       >
-        <div className="max-w-[1000px] max-auto p-4 flex flex-col  w-full h-full">
-          <div className="pb-8 text-center">
+        <div className="max-w-[1000px] max-auto p-4 flex flex-col w-full h-full">
+          <div className=" py-16 text-center">
             {" "}
             {/* Added text-center class */}
-            <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-yellow-500 text-center">
+            <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-blue-700 text-center">
               Projects
             </p>
-            <p className="py-6 text-center">
+            <p className=" text-center">
               Check out some of my recent projects
             </p>
           </div>
@@ -32,8 +37,9 @@ const Projects = () => {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 ">
             {/* Grid Item */}
             <div
+             
               style={{ backgroundImage: `url(${Shopping})` }}
-              className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center text-bold items-center max-auto content-div"
+              className=" card shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center text-bold items-center max-auto content-div"
             >
               <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center">
                 <span className=" text-black tracking-wider text-3xl font-bold inline border-b-4 border-blue-700 text-center">
@@ -58,8 +64,9 @@ const Projects = () => {
 
             {/* Grid Item */}
             <div
+             
               style={{ backgroundImage: `url(${Todo})` }}
-              className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center max-auto content-div"
+              className=" card shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center max-auto content-div"
             >
               {/*hover effects*/}
 
@@ -85,8 +92,9 @@ const Projects = () => {
             </div>
             {/* Grid Item */}
             <div
+              
               style={{ backgroundImage: `url(${Nature})` }}
-              className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center max-auto content-div"
+              className=" card shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center max-auto content-div"
             >
               {/*hover effects*/}
 
@@ -114,7 +122,7 @@ const Projects = () => {
             {/* Grid Item */}
             <div
               style={{ backgroundImage: `url(${Movie})` }}
-              className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center max-auto content-div"
+              className=" card shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center max-auto content-div"
             >
               {/*hover effects*/}
 
@@ -141,7 +149,7 @@ const Projects = () => {
             {/* Grid Item */}
             <div
               style={{ backgroundImage: `url(${Portfolio})` }}
-              className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center max-auto content-div"
+              className=" card shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center max-auto content-div"
             >
               {/*hover effects*/}
 
@@ -167,9 +175,10 @@ const Projects = () => {
             </div>
 
             {/* Grid Item */}
-            <div
-              style={{ backgroundImage: `url(${Article})` }}
-              className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center max-auto content-div"
+            <div className="card">
+        <div 
+             style={{ backgroundImage: `url(${Article})` }}
+              className=" card shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center max-auto content-div"
             >
               {/*hover effects*/}
               <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center">
@@ -178,7 +187,7 @@ const Projects = () => {
                 </span>
                 <div className="pt-8 text-center">
                   <div>
-                    <a href="/https://stirring-hotteok-e04dc2.netlify.app/">
+                    <a href="https://stirring-hotteok-e04dc2.netlify.app/">
                       <button className="text-center rounded-lg px-4 py-3 m-2 bg-black text-white font-bold text-lg">
                         Demo
                       </button>
@@ -195,6 +204,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+    </div>
     );
 };
 

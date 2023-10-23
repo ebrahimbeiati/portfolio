@@ -8,14 +8,14 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className="fixed w-full h-[80px] Flex justify-between items-center px-4 bg-[#0b0b0b] text-gray-200">
+    <div className="fixed w-full h-[90px] Flex text-2xl font-bold items-center px-4 bg-[#0b0b0b] text-gray-200">
       <div className="shadow-md shadow-[#111111] ">
         <img src={Logo} alt="logo_Image" style={{ width: "50px" }} />{" "}
       </div>
 
       {/* menu */}
       <ul className="hidden md:flex ">
-        <li className="link-hover">
+        <li className="link-hover ">
           <Link to="home" smooth={true} duration={500}>
             Home
           </Link>

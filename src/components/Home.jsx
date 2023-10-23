@@ -122,7 +122,7 @@ const Home = () => {
       duration={500}
     >
         <button
-          className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-yellow-500 hover:border-yellow-500"
+          className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-blue-700 hover:border-blue-700"
           type="button">
           View Projects{" "}
           <span className="group-hover:rotate-90 duration-300">

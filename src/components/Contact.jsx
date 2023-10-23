@@ -9,7 +9,7 @@ const Contact = () => {
       className="w-full h-screen bg-slate-800 flex flex-col justify-center items-center p-4"
     >
       <div className="pb-8 text-center">
-        <p className="text-4xl font-bold inline border-b-4 border-yellow-500 text-white">
+        <p className="text-4xl font-bold inline border-b-4 border-blue-700 text-white">
           Contact
         </p>
         <p className="text-white py-6 text-xl">Get in touch</p>
