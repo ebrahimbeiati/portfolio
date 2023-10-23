@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'tailwindcss/tailwind.css';
+
 
 
 
@@ -52,6 +54,9 @@
   animation: moveImage2 15s linear infinite;
   /* Add styles, such as width, height, and initial position */
 }
+
+
+
 
 /* Add more image styles and animations as needed */
 
