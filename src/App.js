@@ -30,7 +30,8 @@
  import Skills from "./components/Skills";
  import Projects from "./components/Projects.jsx";
  import Contact from "./components/Contact";
- import Footer from "./components/Footer";
+import Footer from "./components/Footer";
+ import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
  import "./App.css";
 
  function App() {
@@ -53,6 +54,7 @@
          <Contact />
        </Element>
        <Footer />
+       <ScrollToTopButton />
      </div>
    );
  }

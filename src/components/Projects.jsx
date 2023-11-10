@@ -270,11 +270,10 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div
-      name="project"
-           className="w-full h-screen text-white bg-slate-800 flex flex-col justify-center items-center mt-[90px]"
-
-    >
+   <div
+          name="project"
+          className="w-full h-screen project-card text-white bg-slate-800 flex flex-col justify-center items-center"
+        >
       <div className="max-w-[1000px] max-auto p-4 flex flex-col w-full h-full">
         <div className="py-14 text-center my-3">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-blue-700 text-center">
