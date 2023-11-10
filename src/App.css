@@ -34,53 +34,6 @@
 }
 
 
-.moving-images {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 800%; /* Adjust the width to fit the number of images */
-  overflow: hidden;
-  z-index: -1;
-  display: flex;
-  flex-direction: row;
-}
-
-.image {
-  animation: moveImages 80s linear infinite; /* Adjust the duration based on the number of images */
-  width: 12.5%; /* Adjust the width for each image based on the number of images */
-  height: 100%;
-}
-
-/* Define keyframes for the animation */
-@keyframes moveImages {
-  0% {
-    transform: translateX(0);
-  }
-  12.5% {
-    transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-200%);
-  }
-  37.5% {
-    transform: translateX(-300%);
-  }
-  50% {
-    transform: translateX(-400%);
-  }
-  62.5% {
-    transform: translateX(-500%);
-  }
-  75% {
-    transform: translateX(-600%);
-  }
-  87.5% {
-    transform: translateX(-700%);
-  }
-  100% {
-    transform: translateX(-800%); /* Adjust this value based on the width of all images */
-  }
-}
 
 
 .link-hover {
