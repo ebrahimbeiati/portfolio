@@ -271,7 +271,7 @@ const Projects = () => {
   return (
     <div
       name="project"
-      className="w-full mx-auto bg-slate-800  shadow-md overflow-hidden "
+      className=" grid w-full mx-auto bg-slate-800  shadow-md overflow-hidden "
     >
       <div className="md:flex">
         <div className="md:shrink-1 rounded-lg">
