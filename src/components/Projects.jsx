@@ -271,7 +271,7 @@ const Projects = () => {
   return (
     <div
       name="project"
-      className="max-w-full   flex mx-auto bg-slate-800  shadow-md overflow-hidden "
+      className="w-full mx-auto bg-slate-800  shadow-md overflow-hidden "
     >
       <div className="md:flex">
         <div className="md:shrink-1 rounded-lg">
@@ -284,19 +284,18 @@ const Projects = () => {
             </p>
           </div>
 
-          <div className="m-1 grid p-4 grid-cols-1 sm:grid-cols-3 md:grid-cols-3   gap-4 ">
+          <div className="  grid m-2 p-4 grid-cols-1 sm:grid-cols-3 md:grid-cols-3   gap-4 ">
             {projects.map((project, index) => (
               <div
                 key={index}
-           
-                className="flex object-cover rounded-lg md:h-full md:w-full  content-div group container"
+                className=" object-cover rounded-lg md:h-full m-1 md:w-full  content-div group container"
                 style={{ backgroundImage: `url(${project.image})` }}
               >
                 <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center  bg-white p-6 rounded-md shadow-md">
                   <span className="text-black tracking-wider mt-3 text-xl font-semibold inline border-b-4 border-blue-700 text-center">
                     {project.title}
                   </span>
-                  <p className="text-gray-800 text-center my-4">
+                  <p className="text-gray-800 text-center">
                     {project.description}
                   </p>
                   <div className="pt-4 text-center">
