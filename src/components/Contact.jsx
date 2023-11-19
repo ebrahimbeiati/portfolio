@@ -6,9 +6,9 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-slate-800 flex flex-col justify-center items-center p-4"
+      className="w-full h-screen bg-slate-800 flex flex-col justify-center items-center "
     >
-      <div className="pb-8 text-center">
+      <div className=" text-center pb-24">
         <p className="text-4xl font-bold inline border-b-4 border-blue-700 text-white">
           Contact
         </p>

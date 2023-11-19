@@ -265,63 +265,64 @@ const projects = [
     demoLink: "/",
     codeLink: "/",
   },
-  // Add other projects with similar structure
 ];
 
 const Projects = () => {
   return (
-   <div
-          name="project"
-          className="w-full h-screen project-card text-white bg-slate-800 flex flex-col justify-center items-center"
-        >
-      <div className="max-w-[1000px] max-auto p-4 flex flex-col w-full h-full">
-        <div className="py-14 text-center my-3">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-blue-700 text-center">
-            Projects
-          </p>
-          <p className="text-center my-3 py-2">
-            Check out some of my recent projects
-          </p>
-        </div>
+    <div
+      name="project"
+      className="max-w-full   flex mx-auto bg-slate-800  shadow-md overflow-hidden "
+    >
+      <div className="md:flex">
+        <div className="md:shrink-1 rounded-lg">
+          <div className=" mt-28 text-center text-white ">
+            <p className="text-4xl font-bold inline border-b-4 border-blue-700 text-center ">
+              Projects
+            </p>
+            <p className="text-center   py-2">
+              Check out some of my recent projects
+            </p>
+          </div>
 
-        {/* Project Cards */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="card shadow-lg shadow-[#040c16] group container rounded-md flex flex-col justify-center items-center max-auto content-div"
-              style={{ backgroundImage: `url(${project.image})` }}
-            >
-              <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center h-full w-full bg-white p-6 rounded-md shadow-md">
-                <span className="text-black tracking-wider mt-3 text-xl font-semibold inline border-b-4 border-blue-700 text-center">
-                  {project.title}
-                </span>
-                <p className="text-gray-800 text-center my-4">
-                  {project.description}
-                </p>
-                <div className="pt-4 text-center">
-                  <a
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="rounded-lg px-2 py-2 m-2 bg-black text-white font-bold text-lg">
-                      Demo
-                    </button>
-                  </a>
-                  <a
-                    href={project.codeLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="rounded-lg px-2 py-2 bg-black text-white font-bold text-lg">
-                      Code
-                    </button>
-                  </a>
+          <div className="m-1 grid p-4 grid-cols-1 sm:grid-cols-3 md:grid-cols-3   gap-4 ">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+           
+                className="flex object-cover rounded-lg md:h-full md:w-full  content-div group container"
+                style={{ backgroundImage: `url(${project.image})` }}
+              >
+                <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center  bg-white p-6 rounded-md shadow-md">
+                  <span className="text-black tracking-wider mt-3 text-xl font-semibold inline border-b-4 border-blue-700 text-center">
+                    {project.title}
+                  </span>
+                  <p className="text-gray-800 text-center my-4">
+                    {project.description}
+                  </p>
+                  <div className="pt-4 text-center">
+                    <a
+                      href={project.demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="rounded-lg px-2 py-2 m-2 bg-black text-white font-bold text-lg">
+                        Demo
+                      </button>
+                    </a>
+                    <a
+                      href={project.codeLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="rounded-lg px-2 py-2 bg-black text-white font-bold text-lg">
+                        Code
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

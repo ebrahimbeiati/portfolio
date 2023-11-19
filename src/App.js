@@ -31,8 +31,9 @@
  import Projects from "./components/Projects.jsx";
  import Contact from "./components/Contact";
 import Footer from "./components/Footer";
- import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
- import "./App.css";
+import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
+ import './index.css'
+
 
  function App() {
    return (
