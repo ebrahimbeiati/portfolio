@@ -284,27 +284,27 @@ const Projects = () => {
             </p>
           </div>
 
-          <div className="  grid m-2 p-4 grid-cols-1 sm:grid-cols-3 md:grid-cols-3   gap-4 ">
+          <div className="w-full p-2 grid grid-cols-3 sm:grid-cols-3 gap-4 text-center py-20">
             {projects.map((project, index) => (
               <div
                 key={index}
-                className=" object-cover rounded-lg md:h-full m-1 md:w-full  content-div group container"
+                className=" flex object-cover rounded-lg md:h-full  md:w-full  content-div group container"
                 style={{ backgroundImage: `url(${project.image})` }}
               >
-                <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center  bg-white p-6 rounded-md shadow-md">
+                <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center  bg-white rounded-md shadow-md">
                   <span className="text-black tracking-wider mt-3 text-xl font-semibold inline border-b-4 border-blue-700 text-center">
                     {project.title}
                   </span>
-                  <p className="text-gray-800 text-center">
+                  <p className="text-gray-800 text-center my-4">
                     {project.description}
                   </p>
-                  <div className="pt-4 text-center">
+                  <div className=" text-center flex m-8 ">
                     <a
                       href={project.demoLink}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="rounded-lg px-2 py-2 m-2 bg-black text-white font-bold text-lg">
+                      <button className="rounded-lg px-2 py-2  bg-black text-white font-bold text-l">
                         Demo
                       </button>
                     </a>
@@ -313,7 +313,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="rounded-lg px-2 py-2 bg-black text-white font-bold text-lg">
+                      <button className="rounded-lg px-2 py-2 bg-black text-white font-bold text-l">
                         Code
                       </button>
                     </a>
