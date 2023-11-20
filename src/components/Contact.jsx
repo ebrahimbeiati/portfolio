@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-slate-800 flex flex-col justify-center items-center "
+      className="w-full  h-screen pt-14 bg-slate-800 flex flex-col justify-center items-center "
     >
       <div className=" text-center m-24 p-33">
         <p className="text-4xl font-bold inline border-b-4 border-blue-700 text-white">
@@ -18,7 +18,7 @@ const Contact = () => {
         </h1>
         <div>
           <ul className="flex space-x-4 py-6">
-            <li className="w-[130px] h-[50px] bg-blue-600">
+            <li className="md:w-[130px] h-[50px] sm:w-100 bg-blue-600">
               <a
                 className="flex justify-between items-center p-2 text-white text-l"
                 href="https://www.linkedin.com/in/ebrahim-beiati-asl-834216105/"
@@ -26,12 +26,12 @@ const Contact = () => {
                 LinkedIn <FaLinkedin size={30} />
               </a>
             </li>
-            <li className="w-[130px] h-[50px] bg-[#565f69] text-white">
+            <li className="md:w-[130px] h-[50px] sm:w-100 bg-[#565f69] text-white">
               <a className="flex justify-between items-center p-2" href="/">
                 CV <BsFillPersonLinesFill size={30} />
               </a>
             </li>
-            <li className="w-[130px] h-[50px] bg-[#333333] text-white">
+            <li className="md:w-[130px] h-[50px] sm:w-100 bg-[#333333] text-white">
               <a
                 className="flex justify-between items-center p-2"
                 href="https://github.com/ebrahimbeiati"
@@ -41,21 +41,18 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-    
-
-   
-    </div>
-
-    <div className="bg-gray-900 text-white py-6 mt-auto w-full">
-      <div className="container mx-auto flex flex-col items-center">
-        <div className="text-2xl font-bold">Portfolio</div>
-       
-          <p className="text-sm">&copy; {new Date().getFullYear()} Ebrahim Beiati-Asl. All rights reserved.</p>
-        
       </div>
-    </div>
 
+      <div className="bg-gray-900 text-white py-6 mt-auto w-full">
+        <div className="container mx-auto flex flex-col items-center">
+          <div className="text-2xl font-bold">Portfolio</div>
 
+          <p className="text-sm">
+            &copy; {new Date().getFullYear()} Ebrahim Beiati-Asl. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

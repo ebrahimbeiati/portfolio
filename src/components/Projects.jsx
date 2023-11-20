@@ -276,7 +276,7 @@ const Projects = () => {
       <div className="md:flex">
         <div className="md:shrink-1 rounded-lg">
           <div className=" mt-28 text-center text-white ">
-            <p className="text-4xl font-bold inline border-b-4 border-blue-700 text-center ">
+            <p className="md:text-4xl font-bold inline border-b-4 border-blue-700 text-center sm:text-xs ">
               Projects
             </p>
             <p className="text-center   py-2">
@@ -284,27 +284,27 @@ const Projects = () => {
             </p>
           </div>
 
-          <div className="w-full p-2 grid grid-cols-3 sm:grid-cols-3 gap-4 text-center py-20">
+          <div className="w-full p-4 grid grid-cols-2 sm:grid-cols-3 gap-4 text-center  py-20">
             {projects.map((project, index) => (
               <div
                 key={index}
-                className=" flex object-cover rounded-lg md:h-full  md:w-full  content-div group container"
+                className=" flex object-cover rounded-lg md:h-full  md:w-full  content-div group container "
                 style={{ backgroundImage: `url(${project.image})` }}
               >
                 <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center  bg-white rounded-md shadow-md">
-                  <span className="text-black tracking-wider mt-3 text-xl font-semibold inline border-b-4 border-blue-700 text-center">
+                  <span className="text-black md:text-2xl tracking-wider mt-3  font-semibold inline border-b-4 m-4  sm:text-xs border-blue-700 text-center">
                     {project.title}
                   </span>
-                  <p className="text-gray-800 text-center my-4">
+                  <p className="text-gray-800 md:text-2xl sm:text-sm text-center ">
                     {project.description}
                   </p>
-                  <div className=" text-center flex m-8 ">
+                  <div className=" text-center flex justify-between  ">
                     <a
                       href={project.demoLink}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="rounded-lg px-2 py-2  bg-black text-white font-bold text-l">
+                      <button className="rounded-lg px-2 py-2 gap-3  bg-black text-white font-semibold ">
                         Demo
                       </button>
                     </a>
@@ -313,7 +313,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="rounded-lg px-2 py-2 bg-black text-white font-bold text-l">
+                      <button className="rounded-lg px-2 py-2 bg-black text-white font-semibold ">
                         Code
                       </button>
                     </a>
