@@ -27,7 +27,10 @@ const Contact = () => {
               </a>
             </li>
             <li className="md:w-[130px] h-[50px] sm:w-100 bg-[#565f69] text-white">
-              <a className="flex justify-between items-center p-2" href="/">
+              <a
+                className="flex justify-between items-center p-2"
+                href="https://docs.google.com/document/d/1Yh82EqKWx0WVQH4_KPXvmM8BPvOpABqm/edit"
+              >
                 CV <BsFillPersonLinesFill size={30} />
               </a>
             </li>

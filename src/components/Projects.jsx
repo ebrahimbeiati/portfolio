@@ -247,7 +247,7 @@ const projects = [
     description:
       "Discover and explore a vast collection of movies with this movie finder app. Search for your favorite films, get details, and enjoy a personalized movie-watching experience.",
     image: Movie,
-    demoLink: "https://chipper-valkyrie-4ac46b.netlify.app/",
+    demoLink: "https://master--chipper-valkyrie-4ac46b.netlify.app/",
     codeLink: "/",
   },
   {
