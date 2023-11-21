@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full  h-screen pt-14 bg-slate-800 flex flex-col justify-center items-center "
+      className="w-full  h-[80vh] pt-14 bg-slate-800 flex flex-col justify-center items-center "
     >
       <div className="text-center m-24 p-33">
         <p className="text-4xl font-bold inline border-b-4 border-blue-700 text-white">
@@ -52,7 +52,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="bg-gray-900 text-white py-6 mt-auto w-full">
+      {/* <div className="bg-gray-900 text-white py-6 w-full">
         <div className="container mx-auto flex flex-col items-center">
           <div className="text-2xl font-bold">Portfolio</div>
 
@@ -61,7 +61,7 @@ const Contact = () => {
             reserved.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

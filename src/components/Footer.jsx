@@ -1,16 +1,20 @@
-// import React from 'react'
+import React from "react";
 
-// const Footer = () => {
-//   return (
-//     <footer className="bg-gray-900 text-white py-6">
-//       <div className="container mx-auto flex flex-col items-center">
-//         <div className="mb-4 text-2xl font-bold">Portfolio</div>
-//         <div className="mt-6">
-//           <p className="text-sm">&copy; 2023 Ebrahim Beiati-Asl. All rights reserved.</p>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// }
+const Footer = () => {
+  return (
+    <footer className="bg-gray-900 text-white py-6">
+      <div className="bg-gray-900 text-white py-6 w-full">
+        <div className="container mx-auto flex flex-col items-center">
+          <div className="text-2xl font-bold">Portfolio</div>
 
-// export default Footer
+          <p className="text-sm">
+            &copy; {new Date().getFullYear()} Ebrahim Beiati-Asl. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

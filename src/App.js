@@ -29,6 +29,7 @@
  import Skills from "./components/Skills";
  import Projects from "./components/Projects.jsx";
  import Contact from "./components/Contact";
+ import Footer from "./components/Footer.jsx";
 // import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
  import './index.css'
@@ -56,7 +57,7 @@ import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
 
        <Contact />
 
-       {/* <Footer /> */}
+       <Footer />
        <ScrollToTopButton />
      </div>
    );
