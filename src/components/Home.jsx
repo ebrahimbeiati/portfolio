@@ -4,8 +4,8 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div className="flex flex-col justify-center  items-center h-screen bg-gradient-to-r from-blue-600 to-purple-800 text-white ">
-      <h1 className="text-4xl leading-tight hover:underline  font-bold mb-6">
+    <div className="flex flex-col justify-center  items-center h-screen bg-gradient-to-r from-blue-600 to-purple-800 text-white px-4">
+      <h1 className="text-4xl leading-tight hover:underline  font-bold mb-6 text-center">
         Welcome to My Portfolio
       </h1>
       <p className="text-lg text-center mb-8 block mt-1 leading-tight font-medium text-white hover:underline">
@@ -20,7 +20,7 @@ const Home = () => {
             type="button"
           >
             View Projects{" "}
-            <span className="hover:rotate-90 duration-300 hover:cursor-s-resize">
+            <span className="hover:rotate-90 duration-100 hover:cursor-s-resize">
               <HiArrowNarrowRight className="ml-3" />
             </span>
           </button>

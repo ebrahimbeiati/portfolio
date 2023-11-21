@@ -45,7 +45,7 @@ import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
        <Element name="about">
          <About />
        </Element>
-       <Element name="skills">
+       <Element name="skills" >
          <Skills />
        </Element>
        <Element name="projects">
