@@ -215,6 +215,7 @@ import Article from "../assets/screenshots/Article.png";
 import Movie from "../assets/screenshots/Movie.png";
 import Nature from "../assets/screenshots/Nature.png";
 import Portfolio from "../assets/screenshots/Portfolio.png";
+import Realestate from "../assets/screenshots/Realestate.png";
 
 const projects = [
   {
@@ -234,11 +235,11 @@ const projects = [
     codeLink: "/",
   },
   {
-    title: "Photos of nature",
+    title: "Real-Estate",
     description:
-      "Explore the beauty of nature through a collection of stunning photographs. Immerse yourself in the wonders of the natural world and appreciate the artistry captured in each image.",
-    image: Nature,
-    demoLink: "https://jocular-kitsune-c374b8.netlify.app/",
+      "Discover the allure of exquisite homes set against breathtaking landscapes. Full-stack real-estate app. Create with Vite,tailwindcss, MangoDb,Firebase",
+    image: Realestate,
+    demoLink: "https://real-estate-app-fsub.onrender.com/",
     codeLink: "/",
   },
   {
