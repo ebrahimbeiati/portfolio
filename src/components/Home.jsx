@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div className="flex flex-col justify-center  items-center h-screen bg-gradient-to-r from-blue-600 to-purple-800 text-white px-4">
+    <div name="home" className="flex flex-col justify-center  items-center h-screen bg-gradient-to-r from-blue-600 to-purple-800 text-white px-4">
       <h1 className="text-4xl leading-tight hover:underline  font-bold mb-6 text-center">
         Welcome to My Portfolio
       </h1>

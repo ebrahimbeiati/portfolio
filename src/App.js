@@ -32,9 +32,16 @@
 // import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
  import './index.css'
+ import { useEffect } from "react";
+ import { animateScroll as scroll } from "react-scroll";
+
 
 
  function App() {
+
+  useEffect(() => {
+    scroll.scrollToTop();
+  }, []);
    return (
      <div>
        <Navbar />
