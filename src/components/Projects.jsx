@@ -213,7 +213,6 @@ import Shopping from "../assets/screenshots/Shopping.png";
 import Todo from "../assets/screenshots/Todo.png";
 import Article from "../assets/screenshots/Article.png";
 import Movie from "../assets/screenshots/Movie.png";
-import Nature from "../assets/screenshots/Nature.png";
 import Portfolio from "../assets/screenshots/Portfolio.png";
 import Realestate from "../assets/screenshots/Realestate.png";
 
