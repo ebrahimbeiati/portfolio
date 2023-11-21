@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[100px] mx-auto text-2xl font-bold items-center px-4 bg-[#0b0b0b] text-gray-200 z-50">
       <div className="shadow-md shadow-[#111111] ">
-        <img src={Logo} alt="logo_Image" style={{ width: "50px"  }} />{" "}
+        <img src={Logo} alt="logo_Image" style={{ width: "50px" }} />{" "}
       </div>
 
       {/* menu */}
