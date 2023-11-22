@@ -223,7 +223,7 @@ const projects = [
       "An e-commerce platform where users can explore and purchase a variety of products. Enjoy a seamless shopping experience with easy navigation and user-friendly features.",
     image: Shopping,
     demoLink: "https://chimerical-sopapillas-8538be.netlify.app/",
-    codeLink: "/",
+    codeLink: "https://github.com/ebrahimbeiati/online-shopping",
   },
   {
     title: "Todo List",
@@ -231,7 +231,7 @@ const projects = [
       "A simple and intuitive to-do list application that helps you stay organized. Add, edit, and delete tasks with ease, ensuring you never forget important items on your agenda.",
     image: Todo,
     demoLink: "https://creative-puffpuff-4663eb.netlify.app/",
-    codeLink: "/",
+    codeLink: "https://github.com/ebrahimbeiati/todolist",
   },
   {
     title: "Real-Estate",
@@ -239,7 +239,7 @@ const projects = [
       "Discover the allure of exquisite homes set against breathtaking landscapes. Full-stack real-estate app. Create with Vite,tailwindcss, MangoDb,Firebase",
     image: Realestate,
     demoLink: "https://real-estate-app-fsub.onrender.com/",
-    codeLink: "/",
+    codeLink: "https://github.com/ebrahimbeiati/real-estate-app",
   },
   {
     title: "Movie finder",
@@ -247,7 +247,7 @@ const projects = [
       "Discover and explore a vast collection of movies with this movie finder app. Search for your favorite films, get details, and enjoy a personalized movie-watching experience.",
     image: Movie,
     demoLink: "https://master--chipper-valkyrie-4ac46b.netlify.app/",
-    codeLink: "/",
+    codeLink: "https://github.com/ebrahimbeiati/alltube",
   },
   {
     title: "Article summarizer",
@@ -255,7 +255,7 @@ const projects = [
       "Effortlessly summarize lengthy articles and get key insights with this article summarizer. Save time and focus on essential information without reading through extensive content.",
     image: Article,
     demoLink: "https://stirring-hotteok-e04dc2.netlify.app/",
-    codeLink: "/",
+    codeLink: "https://github.com/ebrahimbeiati/article-summarizer",
   },
   {
     title: "Portfolio",
@@ -263,7 +263,7 @@ const projects = [
       "A showcase of my portfolio as a software engineer. Explore the projects I've worked on and learn more about my skills and expertise in the field of software development.",
     image: Portfolio,
     demoLink: "/",
-    codeLink: "/",
+    codeLink: "https://github.com/ebrahimbeiati/portfolio",
   },
 ];
 
