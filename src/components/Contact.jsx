@@ -21,7 +21,7 @@ const Contact = () => {
             <li className="w-[200px] h-[50px] bg-blue-600">
               <a
                 className="flex justify-between p-2 text-white"
-                href="https://www.linkedin.com/in/ebrahim-beiati-asl-834216105/"
+                href="https://www.linkedin.com/in/ebrahim-beiatiasl/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -31,7 +31,7 @@ const Contact = () => {
             <li className="w-[200px] h-[50px] bg-[#565f69] text-white">
               <a
                 className="flex justify-between p-2"
-                href="https://docs.google.com/document/d/1Yh82EqKWx0WVQH4_KPXvmM8BPvOpABqm/edit"
+                href="https://drive.google.com/drive/u/0/home"
                 target="_blank"
                 rel="noreferrer"
               >

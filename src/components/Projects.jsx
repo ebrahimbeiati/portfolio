@@ -210,11 +210,11 @@
 // export default Projects;
 import React from "react";
 import Shopping from "../assets/screenshots/Shopping.png";
-import Todo from "../assets/screenshots/Todo.png";
 import Article from "../assets/screenshots/Article.png";
 import Movie from "../assets/screenshots/Movie.png";
 import Portfolio from "../assets/screenshots/Portfolio.png";
 import Realestate from "../assets/screenshots/Realestate.png";
+import foodLover from "../assets/screenshots/foodLover.png";
 
 const projects = [
   {
@@ -226,12 +226,12 @@ const projects = [
     codeLink: "https://github.com/ebrahimbeiati/online-shopping",
   },
   {
-    title: "Todo List",
+    title: "Food Ordering App",
     description:
-      "A simple and intuitive to-do list application that helps you stay organized. Add, edit, and delete tasks with ease, ensuring you never forget important items on your agenda.",
-    image: Todo,
-    demoLink: "https://creative-puffpuff-4663eb.netlify.app/",
-    codeLink: "https://github.com/ebrahimbeiati/todolist",
+      "A food ordering app where users can browse and order food from various restaurants.Create with React, tailwindcss",
+    image: foodLover,
+    demoLink: "https://foodielove24.netlify.app/",
+    codeLink: "https://github.com/ebrahimbeiati/foodieLove",
   },
   {
     title: "Real-Estate",
