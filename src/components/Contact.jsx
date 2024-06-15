@@ -31,7 +31,7 @@ const Contact = () => {
             <li className="w-[200px] h-[50px] bg-[#565f69] text-white">
               <a
                 className="flex justify-between p-2"
-                href="https://drive.google.com/drive/u/0/home"
+                href="https://docs.google.com/document/d/1tSgkNb036hnInrYva7vp6EmWnA9EMXr8Fu53hBh9U7E/edit"
                 target="_blank"
                 rel="noreferrer"
               >
