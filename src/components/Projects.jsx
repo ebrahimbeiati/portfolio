@@ -75,14 +75,14 @@ const Projects = () => {
             </p>
           </div>
 
-          <div className="w-full p-4 grid grid-cols-1 sm:grid-cols2 sm:grid-cols-3 gap-4 text-center  md:py-20">
+          <div className="w-full p-8 grid grid-cols-1 sm:grid-cols2 sm:grid-cols-2 gap-4 text-center  md:py-24">
             {projects.map((project, index) => (
               <div
                 key={index}
                 className="flex object-cover rounded-lg md:h-full  md:w-full content-div group container"
                 style={{ backgroundImage: `url(${project.image})` }}
               >
-                <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center bg-white rounded-md shadow-md md:p-4 gap-4 leading-4 md:leading-6">
+                <div className="opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center bg-white rounded-md shadow-md md:p-12 gap-4 leading-4 md:leading-6">
                   <span className="text-black md:text-2xl tracking-wider  font-semibold inline border-b-4  sm:text-lg border-blue-700 text-center">
                     {project.title}
                   </span>
