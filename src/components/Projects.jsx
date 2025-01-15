@@ -17,12 +17,12 @@ const projects = [
     codeLink: "https://github.com/ebrahimbeiati/online-shopping",
   },
   {
-    title: "Food Ordering App",
+    title: "Great Restaurant",
     description:
-      "A food ordering app where users can browse and order food from various restaurants.Create with React, tailwindcss",
+      "Discover the best restaurants in town and enjoy a delightful dining experience. Explore a wide range of cuisines and find the perfect spot for your next meal.",
     image: foodLover,
-    demoLink: "https://foodielove24.netlify.app/",
-    codeLink: "https://github.com/ebrahimbeiati/foodieLove",
+    demoLink: "https://great-restaurant-me.netlify.app/",
+    codeLink: "https://github.com/ebrahimbeiati/great-restaurant",
   },
   {
     title: "Real-Estate",
