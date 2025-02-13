@@ -8,7 +8,7 @@ import react from "../assets/react.png";
 import node from "../assets/node.png";
 import tailwind from "../assets/tailwind.png";
 import nextjs from "../assets/nextjs.svg";
-import typescript from "../assets/typescript.jpg";
+import typescript from "../assets/typescript.svg";
 import figma from "../assets/figma.svg";
 import webflow from "../assets/webflow.jpg";
 
