@@ -66,7 +66,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="flex flex-col-reverse md:flex-row justify-center items-center h-screen bg-gradient-to-br from-blue-700 via-purple-700 to-black text-white px-6 md:px-16"
+      className="flex flex-col-reverse md:flex-row justify-center items-center h-screen bg-gradient-to-br from-purple-700 via-black to-blue-700 text-white px-6 md:px-16"
     >
       <div className="text-center p-8 md:p-12">
         <div className="flex justify-center items-center mb-6">

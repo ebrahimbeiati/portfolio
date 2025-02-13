@@ -62,7 +62,7 @@ const Projects = () => {
   return (
     <div
       name="project"
-      className=" grid w-full mx-auto bg-slate-800  shadow-md overflow-hidden "
+      className=" grid w-full mx-auto  bg-gradient-to-br  from-blue-700 via-purple-700 to-black   shadow-md overflow-hidden "
     >
       <div className="md:flex">
         <div className="md:shrink-1 rounded-lg">
