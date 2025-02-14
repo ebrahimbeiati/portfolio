@@ -58,10 +58,11 @@ const About = () => {
           <div className="relative w-80 h-80 rounded-full overflow-hidden shadow-lg">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-60 z-[-1]" />
             <img
-              src="/path/to/your-profile-image.jpg"  // Replace with your actual image
-              alt="Ebrahim Beiati-Asl"
-              className="w-full h-full object-cover rounded-full border-4 border-gray-700"
-            />
+  src="https://github.com/ebrahimbeiati.png"  // GitHub profile picture URL
+  alt="Ebrahim Beiati-Asl"
+  className="w-full h-full object-cover rounded-full border-4 border-gray-700"
+/>
+
           </div>
         </motion.div>
       </div>
