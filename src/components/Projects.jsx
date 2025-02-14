@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion"; // Import Framer Motion
+import { motion } from "framer-motion"; 
 import Shopping from "../assets/screenshots/Shopping.png";
 import Article from "../assets/screenshots/Article.png";
 import Movie from "../assets/screenshots/Movie.png";
