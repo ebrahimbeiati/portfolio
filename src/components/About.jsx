@@ -3,12 +3,12 @@ import { HiOutlineCode } from "react-icons/hi";
 
 const About = () => {
   return (
-    <div name="about" className="w-full min-h-screen bg-black py-16 sm:py-28 bg-gradient-to-br from-purple-700 via-black to-blue-700">
+    <div name="about" className="w-full  min-h-screen bg-black py-16 sm:py-28 bg-gradient-to-br from-purple-700 via-black to-blue-700">
       {/* Gradient Background for Depth */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-800 to-purple-800 opacity-50 z-[-1]" />
       
       {/* Main Content Container */}
-      <div className="w-full max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 px-4 sm:px-8">
+      <div className="w-full max-w-screen-xl mx-auto mt-14 flex flex-col-reverse md:flex-row items-center justify-between gap-8 px-4 sm:px-8">
         
         {/* Left Side - About Info */}
         <motion.div

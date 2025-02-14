@@ -200,19 +200,15 @@ const Skills = () => {
       id="skills"
       className="w-full min-h-screen bg-gradient-to-br from-black via-blue-700 to-purple-700 py-20 px-4 relative"
     >
-      <div className="text-center flex flex-col items-start justify-center">
-        <motion.p
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-5xl text-white border-b-4 border-blue-500"
-        >
+          <div className="text-center mt-16 flex flex-col items-start justify-center">
+        <div className="text-5xl text-white border-b-4 border-blue-500">
           My Skills
-        </motion.p>
+        </div>
         <p className="text-lg text-gray-300 mt-2">
-          Technologies I specialize in:
+          Technologies I work with:
         </p>
       </div>
+  
       
 
 
@@ -220,6 +216,7 @@ const Skills = () => {
       <div className="hidden md:flex justify-center relative w-full h-[600px]">
         {/* Background Circle for Skills */}
         <div className="absolute w-[600px] h-[600px] bg-gradient-to-br from-gray-700 via-slate-600 to-slate-800 shadow-lg rounded-full">
+          
           {/* Circle Content (Skills) */}
           {skills.map((skill, index) => (
             <motion.div
@@ -243,13 +240,14 @@ const Skills = () => {
                 ease: "easeInOut", // Smooth transition for shining
               }}
             >
+              
               <img src={skill.icon} alt={skill.name} className="w-12 h-12 object-contain" />
               {/* Name Visible on Shine */}
               <motion.div
-                className="absolute top-[120%] left-[50%] transform -translate-x-1/2 text-center text-white opacity-0 group-hover:opacity-100"
+                className="absolute top-[70%] left-[50%] transform -translate-x-1/2 text-center text-white opacity-0 group-hover:opacity-100"
                 style={{
                   fontSize: "14px",
-                  padding: "7px",
+                  padding: "4px",
                   whiteSpace: "nowrap",
                 }}
                 animate={{
@@ -265,8 +263,10 @@ const Skills = () => {
                 {skill.name}
               </motion.div>
             </motion.div>
+            
           ))}
         </div>
+        
       </div>
 
       {/* Mobile - Floating Cards with Shine Effect */}
