@@ -104,3 +104,18 @@
 }
 
 /* Add more keyframes for other images */
+@layer utilities {
+  .outline-text {
+    text-shadow: 
+      -2px -2px 0 #ffffff,  
+       2px -2px 0 #ffffff,
+      -2px  2px 0 #ffffff,
+       2px  2px 0 #ffffff;
+  }
+
+  @media (min-width: 640px) {
+    .outline-text {
+      text-shadow: none;
+    }
+  }
+}
