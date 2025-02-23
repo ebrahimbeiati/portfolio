@@ -82,11 +82,11 @@ const timelineData = [
 const About = () => (
   <div
     id="about"
-    className="w-full min-h-screen bg-gradient-to-br from-black via-blue-700 to-purple-700 py-20 px-4 relative flex flex-col justify-center"
+    className="w-full min-h-screen bg-gradient-to-br from-purple-700 via-black to-blue-700 py-20 px-4 relative flex flex-col justify-center"
   >
     {/* Section Title */}
     <div className="text-left mt-16 ">
-      <div className="text-5xl text-white border-b-4  border-blue-500">
+      <div className="text-5xl text-white border-b-4  border-blue-500 inline-block">
         About Me
       </div>
       <p className="text-lg text-gray-300 mt-2">
@@ -98,7 +98,7 @@ const About = () => (
     <div className="hidden md:flex justify-center relative w-full h-[600px]">
       {/* Profile Image as the Center */}
       <motion.div
-        className="relative w-52 h-52 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-2xl "
+        className="relative w-40 h-40 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-2xl "
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
@@ -114,7 +114,7 @@ const About = () => (
       {timelineData.map((item, index) => (
         <motion.div
           key={index}
-          className="absolute mt-10 w-52 h-52 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg flex flex-col justify-center items-center shadow-lg group"
+          className="absolute mt-10 w-40 h-40 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg flex flex-col justify-center items-center shadow-lg group"
           style={{
             transform: `translate(${220 * Math.cos((index / timelineData.length) * 2 * Math.PI)}px, 
                                   ${220 * Math.sin((index / timelineData.length) * 2 * Math.PI)}px)`,
