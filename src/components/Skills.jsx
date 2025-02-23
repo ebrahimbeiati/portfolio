@@ -164,6 +164,8 @@
 // };
 
 // export default Skills;
+
+
 import React from "react";
 import { motion } from "framer-motion";
 import aws from "../assets/aws.png";
@@ -209,9 +211,6 @@ const Skills = () => {
         </p>
       </div>
   
-      
-
-
       {/* Desktop - Circular Skill Layout */}
       <div className="hidden md:flex justify-center relative w-full h-[600px]">
         {/* Background Circle for Skills */}
