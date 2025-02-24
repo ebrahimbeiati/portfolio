@@ -4,8 +4,8 @@ Welcome to my **personal portfolio website**, where I showcase my **projects, sk
 This website is built with **React** and styled using **Tailwind CSS**, ensuring a fast, modern, and responsive user experience.
 
 ## 🚀 Live Demo
-🔗 [View Portfolio](https://portfolio-ebrahim-beiatiasl.netlify.app/) *(Replace with your actual link)*
-
+🔗 [View Portfolio](https://portfolio-ebrahim-beiatiasl.netlify.app/) 
+🔗 https://github.com/ebrahimbeiati/portfolio.git
 ---
 
 ## 📌 Features
