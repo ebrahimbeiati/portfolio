@@ -42,7 +42,7 @@ const Contact = () => {
           </a>
           <a
             className="flex items-center justify-center w-48 h-12 bg-gray-700 text-white font-bold rounded-lg shadow-lg transform transition-all hover:bg-gray-600 hover:scale-105"
-            href="https://drive.google.com/file/d/1Sd60qvCK2cqbgmY5Dt_vOtV_v2mki4yr/view?usp=drive_link"
+            href="https://docs.google.com/document/d/1irEjxDuGbjoot0QqgylYygHa9Ent04D4Deh6ulPIrHw/edit?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
