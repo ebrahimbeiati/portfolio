@@ -1,161 +1,248 @@
-// import { motion } from "framer-motion";
-// import { HiOutlineCode } from "react-icons/hi";
-
-// const About = () => {
-//   return (
-//     <div name="about" className="w-full  min-h-screen bg-black py-16 sm:py-28 bg-gradient-to-br from-purple-700 via-black to-blue-700">
-//       {/* Gradient Background for Depth */}
-//       <div className="absolute inset-0 bg-gradient-to-br from-blue-800 to-purple-800 opacity-50 z-[-1]" />
-      
-//       {/* Main Content Container */}
-//       <div className="w-full max-w-screen-xl mx-auto mt-14 flex flex-col-reverse md:flex-row items-center justify-between gap-8 px-4 sm:px-8">
-        
-//         {/* Left Side - About Info */}
-//         <motion.div
-//           className="flex-1 text-white space-y-6 text-center md:text-left"
-//           initial={{ opacity: 0, x: -50 }}
-//           animate={{ opacity: 1, x: 0 }}
-//           transition={{ duration: 1 }}
-//         >
-//           <h2 className="text-xl sm:text-3xl font-extrabold text-gray-300">I’m</h2>
-//           <h2 className="text-2xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-//             Ebrahim Beiati-Asl
-//           </h2>
-//           <h2 className="text-lg sm:text-2xl font-bold text-gray-200">
-//             The Developer Behind the Code
-//           </h2>
-
-//           <p className="text-gray-300 text-sm sm:text-lg">
-//             Passionate about solving problems and transforming ideas into reality, I’m a Full Stack Developer who thrives on the challenge of creating intuitive, scalable applications.
-//           </p>
-
-//           <p className="text-gray-200 text-sm sm:text-lg">
-//             Development isn’t just about writing code—it’s about crafting experiences. Whether it’s a seamless UI or a robust backend, my goal is to create meaningful and impactful products.
-//           </p>
-
-//           <div className="flex justify-center md:justify-start mt-6">
-//             <motion.button
-//               className="w-full sm:w-auto bg-blue-600 text-white text-base sm:text-lg py-2 px-6 rounded-lg shadow-lg hover:bg-blue-500 transition duration-300 flex items-center justify-center"
-//               whileHover={{ scale: 1.05 }}
-//             >
-//               <HiOutlineCode className="mr-2" />
-//               Let's Build Something Great
-//             </motion.button>
-//           </div>
-//         </motion.div>
-        
-//         {/* Right Side - Profile Image */}
-//         <motion.div
-//           className="flex-1 flex justify-center items-center"
-//           initial={{ opacity: 0, x: 50 }}
-//           animate={{ opacity: 1, x: 0 }}
-//           transition={{ duration: 1 }}
-//         >
-//           <div className="relative w-40 sm:w-64 md:w-80 h-40 sm:h-64 md:h-80 rounded-full overflow-hidden shadow-lg">
-//             <img
-//               src="https://github.com/ebrahimbeiati.png"
-//               alt="Ebrahim Beiati-Asl"
-//               className="w-full h-full object-cover rounded-full border-4 border-gray-700"
-//             />
-//           </div>
-//         </motion.div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default About;
-
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGraduationCap, FaBook, FaLaptopCode, FaServer, FaCloud, FaRocket } from "react-icons/fa";
+import { FaGraduationCap, FaBook, FaLaptopCode, FaServer, FaCloud, FaRocket, FaStar, FaHeart, FaLightbulb } from "react-icons/fa";
 
 const timelineData = [
-  { year: "2019", icon: <FaGraduationCap />, title: "First Code", description: "Started with HTML, CSS, and JavaScript." },
-  { year: "2020", icon: <FaBook />, title: "Full-Stack Journey", description: "Built first React & Node.js app." },
-  { year: "2021", icon: <FaServer />, title: "Backend Focus", description: "Exploring databases and APIs." },
-  { year: "2022", icon: <FaCloud />, title: "Cloud & DevOps", description: "Worked with AWS, Docker, and CI/CD." },
-  { year: "2023", icon: <FaLaptopCode />, title: "Advanced React", description: "Optimized React apps for performance." },
-  { year: "2024", icon: <FaRocket />, title: "Scaling Up", description: "Building high-performance web apps." },
+  { 
+    year: "2019", 
+    icon: <FaGraduationCap />, 
+    title: "First Steps", 
+    description: "Started my journey with HTML, CSS, and JavaScript fundamentals.",
+    color: "from-blue-500 to-cyan-500"
+  },
+  { 
+    year: "2020", 
+    icon: <FaBook />, 
+    title: "Full-Stack Learning", 
+    description: "Built my first complete React & Node.js application.",
+    color: "from-purple-500 to-pink-500"
+  },
+  { 
+    year: "2021", 
+    icon: <FaServer />, 
+    title: "Backend Mastery", 
+    description: "Deep dive into databases, APIs, and server-side development.",
+    color: "from-green-500 to-emerald-500"
+  },
+  { 
+    year: "2022", 
+    icon: <FaCloud />, 
+    title: "Cloud & DevOps", 
+    description: "Explored AWS, Docker, and modern deployment practices.",
+    color: "from-orange-500 to-red-500"
+  },
+  { 
+    year: "2023", 
+    icon: <FaLaptopCode />, 
+    title: "Advanced Frontend", 
+    description: "Mastered React optimization and modern web technologies.",
+    color: "from-indigo-500 to-purple-500"
+  },
+  { 
+    year: "2024", 
+    icon: <FaRocket />, 
+    title: "Scaling Solutions", 
+    description: "Building high-performance, scalable web applications.",
+    color: "from-yellow-500 to-orange-500"
+  },
+  { 
+    year: "2025+", 
+    icon: <FaStar />, 
+    title: "Future Vision", 
+    description: "Leading innovative projects and mentoring the next generation.",
+    color: "from-pink-500 to-rose-500"
+  },
 ];
 
 const About = () => (
-  <div
+  <section
     id="about"
-    className="w-full min-h-screen bg-gradient-to-br from-purple-700 via-black to-blue-700 py-20 px-4 relative flex flex-col justify-center"
+    className="w-full min-h-screen bg-gradient-to-br from-purple-700 via-black to-blue-700 py-20 relative"
+    aria-labelledby="about-heading"
   >
-    {/* Section Title */}
-    <div className="text-left mt-16 ">
-      <div className="text-5xl text-white border-b-4  border-blue-500 inline-block">
-        About Me
-      </div>
-      <p className="text-lg text-gray-300 mt-2">
-        My Journey as a Developer
-      </p>
+    {/* Background Pattern */}
+    <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[length:20px_20px]"></div>
     </div>
 
-    {/* Desktop - Timeline Around Profile Image */}
-    <div className="hidden md:flex justify-center relative w-full h-[600px]">
-      {/* Profile Image as the Center */}
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      {/* Section Header */}
       <motion.div
-        className="relative w-40 h-40 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-2xl "
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
+        className="text-center text-white mb-16"
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
       >
-        <img
-          src="https://github.com/ebrahimbeiati.png"
-          alt="Ebrahim Beiati-Asl"
-          className="w-full h-full object-cover"
-        />
+        <h2
+          id="about-heading"
+          className="text-4xl md:text-5xl font-bold mb-6"
+        >
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+            About Me
+          </span>
+        </h2>
+        <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          A passionate Full-Stack Developer with a love for creating innovative solutions and turning ideas into reality.
+        </p>
       </motion.div>
 
-      {/* Timeline Items Around the Image */}
-      {timelineData.map((item, index) => (
+      {/* Main Content Grid */}
+      <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        {/* Left Side - Personal Info */}
         <motion.div
-          key={index}
-          className="absolute mt-10 w-40 h-40 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg flex flex-col justify-center items-center shadow-lg group"
-          style={{
-            transform: `translate(${220 * Math.cos((index / timelineData.length) * 2 * Math.PI)}px, 
-                                  ${220 * Math.sin((index / timelineData.length) * 2 * Math.PI)}px)`,
-          }}
-          animate={{
-            boxShadow: [
-              "0 0 10px rgba(255, 255, 255, 0.3)",
-              "0 0 20px rgba(255, 255, 255, 0.6)",
-              "0 0 10px rgba(255, 255, 255, 0.3)",
-            ],
-          }}
-          transition={{
-            repeat: Infinity,
-            duration: 2,
-            ease: "easeInOut",
-          }}
+          className="space-y-8"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
         >
-          {/* Icon */}
-          <div className="text-3xl text-purple-400 mb-2">{item.icon}</div>
-          {/* Year and Description */}
-          <h3 className="text-lg font-semibold text-gray-300">{item.year}</h3>
-          <p className="text-gray-400 text-sm text-center">{item.description}</p>
-        </motion.div>
-      ))}
-    </div>
+          <div className="glass-card rounded-2xl p-8">
+            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              <FaHeart className="text-red-400" />
+              My Passion
+            </h3>
+            <p className="text-gray-300 leading-relaxed mb-6">
+              I'm passionate about solving complex problems and creating user-centric applications that make a difference. 
+              Every line of code I write is driven by the desire to build something meaningful and impactful.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
+              or sharing knowledge with the developer community.
+            </p>
+          </div>
 
-    {/* Mobile - Grid Layout */}
-    <div className="md:hidden grid grid-cols-1 gap-6 mt-10">
-      {timelineData.map((item, index) => (
-        <motion.div
-          key={index}
-          className="relative flex flex-col items-center justify-center p-6 rounded-lg shadow-xl bg-gray-900/80 border border-blue-500 hover:shadow-blue-500 transition-all duration-300 backdrop-blur-lg group"
-          whileHover={{ scale: 1.05 }}
-        >
-          <div className="text-4xl text-purple-400 mb-3">{item.icon}</div>
-          <h3 className="text-lg font-semibold text-white">{item.year} - {item.title}</h3>
-          <p className="text-gray-300 text-sm text-center">{item.description}</p>
+          <div className="glass-card rounded-2xl p-8">
+            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              <FaLightbulb className="text-yellow-400" />
+              My Approach
+            </h3>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-300">Clean, maintainable code with best practices</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-300">User-first design with exceptional UX</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-300">Scalable architecture for future growth</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-300">Performance optimization and testing</p>
+              </div>
+            </div>
+          </div>
         </motion.div>
-      ))}
+
+        {/* Right Side - Profile Image */}
+        <motion.div
+          className="flex justify-center"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          <div className="relative">
+            {/* Glow Effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+            
+            {/* Profile Image */}
+            <motion.div
+              className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
+              <img
+                src="https://github.com/ebrahimbeiati.png"
+                alt="Ebrahim Beiati-Asl"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+
+            {/* Floating Elements */}
+            <motion.div
+              className="absolute -top-4 -right-4 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center shadow-lg"
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            >
+              <span className="text-white text-lg">⚛️</span>
+            </motion.div>
+            
+            <motion.div
+              className="absolute -bottom-4 -left-4 w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center shadow-lg"
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 2, repeat: Infinity, delay: 1 }}
+            >
+              <span className="text-white text-lg">🚀</span>
+            </motion.div>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Timeline Section */}
+      <motion.div
+        className="mt-20"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+      >
+        <h3 className="text-3xl font-bold text-white text-center mb-12">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+            My Journey
+          </span>
+        </h3>
+
+        {/* Timeline Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {timelineData.map((item, index) => (
+            <motion.div
+              key={index}
+              className="group relative"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.8 + index * 0.1,
+                duration: 0.6
+              }}
+              whileHover={{ y: -10 }}
+            >
+              {/* Timeline Card */}
+              <div className="glass-card rounded-2xl p-6 h-full relative overflow-hidden">
+                {/* Background Gradient */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-10 group-hover:opacity-20 transition-opacity duration-300`}></div>
+                
+                {/* Content */}
+                <div className="relative z-10">
+                  {/* Icon */}
+                  <div className={`w-16 h-16 bg-gradient-to-br ${item.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                    <span className="text-white text-2xl">{item.icon}</span>
+                  </div>
+
+                  {/* Year */}
+                  <div className="text-2xl font-bold text-white mb-2">{item.year}</div>
+
+                  {/* Title */}
+                  <h4 className="text-lg font-semibold text-white mb-3">{item.title}</h4>
+
+                  {/* Description */}
+                  <p className="text-gray-300 text-sm leading-relaxed">{item.description}</p>
+                </div>
+
+                {/* Hover Glow */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-2xl`}></div>
+              </div>
+
+              {/* Connection Line (for desktop) */}
+              {index < timelineData.length - 1 && (
+                <div className="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transform -translate-y-1/2"></div>
+              )}
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
     </div>
-  </div>
+  </section>
 );
 
 export default About;

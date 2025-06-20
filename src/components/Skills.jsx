@@ -1,173 +1,6 @@
-// import React from 'react';
-// import aws from "../assets/aws.png";
-// import github from "../assets/github.png";
-// import HTML from "../assets/html.png";
-// import CSS from "../assets/css.png";
-// import JavaScript from "../assets/javascript.png";
-// import react from "../assets/react.png";
-// import node from "../assets/node.png";
-// import tailwind from "../assets/tailwind.png";
-// import nextjs from "../assets/nextjs.svg";
-// import typescript from "../assets/typescript.svg";
-// import figma from "../assets/figma.svg";
-// import webflow from "../assets/webflow.jpg";
-
-// const Skills = () => {
-//   return (
-//     <div
-//       id="skills"
-//       className="w-full min-h-screen  bg-gradient-to-br  from-black via-blue-700 to-purple-700 py-28 px-4 relative"
-//     >
-//       {/* Centralized Title */}
-//       <div className="max-w-[1200px] mx-auto text-center mb-12">
-//         <p className="text-4xl font-extrabold text-white border-b-4 border-blue-500 inline-block pb-2 mb-4">
-//           My Skills
-//         </p>
-//         <p className="text-lg md:text-xl text-gray-300 font-medium">
-//           Technologies I've mastered and frequently use:
-//         </p>
-//       </div>
-
-//       {/* Circular Layout */}
-//       <div className="absolute top-52 inset-0 flex justify-center items-center">
-//         <div className="relative w-[600px] h-[600px] rounded-full bg-gradient-to-br from-gray-800 via-slate-600 to-slate-800 shadow-lg p-6">
-//           {/* Circle Content */}
-//           <div className="absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-center text-white z-10">
-//             <h2 className="text-2xl font-bold mb-2">Technologies</h2>
-//             <p className="text-sm opacity-80">Mastered Technologies</p>
-//           </div>
-          
-//           {/* Skills Circulating Around */}
-//           <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
-//             <div className="absolute top-[40%] left-[40%] transform translate-x-[-50%] translate-y-[-50%]  ">
-//               {[
-//                 { name: 'HTML', icon: HTML },
-//                 { name: 'AWS', icon: aws },
-//                 { name: 'GitHub', icon: github },
-//                 { name: 'CSS', icon: CSS },
-//                 { name: 'JavaScript', icon: JavaScript },
-//                 { name: 'React', icon: react },
-//                 { name: 'Node.js', icon: node },
-//                 { name: 'Tailwind', icon: tailwind },
-//                 { name: 'Next.js', icon: nextjs },
-//                 { name: 'TypeScript', icon: typescript },
-//                 { name: 'Figma', icon: figma },
-//                 { name: 'Webflow', icon: webflow }
-//               ].map((skill, index) => (
-//                 <div
-//                   key={index}
-//                   className="absolute"
-//                   style={{
-//                     transform: `rotate(${(index * 30)}deg) translateY(-220px)` // Increased translateY for more space
-//                   }}
-//                 >
-//                   <div className="group relative p-6 rounded-full shadow-lg hover:scale-110 transition-all duration-300 transform hover:rotate-8  hover:shadow-blue-600">
-//                     <img className="w-12 h-12" src={skill.icon} alt={`${skill.name} Icon`} />
-//                     <p className="text-center mt-4 text-white">{skill.name}</p>
-//                     {/* Tooltip with Skill Description */}
-//                     <div className="group-hover:block hidden absolute top-[-50px] left-[-50%] transform translate-x-[-50%] bg-black text-white text-xs rounded-lg py-1 px-3 opacity-0 group-hover:opacity-100 transition-all duration-300">
-//                       {skill.name} Skill
-//                     </div>
-//                   </div>
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Skills;
-
-// import React from "react";
-// import aws from "../assets/aws.png";
-// import github from "../assets/github.png";
-// import HTML from "../assets/html.png";
-// import CSS from "../assets/css.png";
-// import JavaScript from "../assets/javascript.png";
-// import react from "../assets/react.png";
-// import node from "../assets/node.png";
-// import tailwind from "../assets/tailwind.png";
-// import nextjs from "../assets/nextjs.svg";
-// import typescript from "../assets/typescript.svg";
-// import figma from "../assets/figma.svg";
-// import webflow from "../assets/webflow.jpg";
-
-// const skills = [
-//   { name: "HTML", icon: HTML },
-//   { name: "AWS", icon: aws },
-//   { name: "GitHub", icon: github },
-//   { name: "CSS", icon: CSS },
-//   { name: "JavaScript", icon: JavaScript },
-//   { name: "React", icon: react },
-//   { name: "Node.js", icon: node },
-//   { name: "Tailwind", icon: tailwind },
-//   { name: "Next.js", icon: nextjs },
-//   { name: "TypeScript", icon: typescript },
-//   { name: "Figma", icon: figma },
-//   { name: "Webflow", icon: webflow },
-// ];
-
-// const Skills = () => {
-//   return (
-//     <div
-//       id="skills"
-//       className="w-full min-h-screen bg-gradient-to-br from-black via-blue-700 to-purple-700 py-20 px-4 relative"
-//     >
-//       {/* Title */}
-//       <div className="max-w-[1200px] mx-auto text-center mb-12">
-//         <p className="text-3xl sm:text-4xl font-extrabold text-white border-b-4 border-blue-500 inline-block pb-2">
-//           My Skills
-//         </p>
-//         <p className="text-md sm:text-lg text-gray-300 mt-2">
-//           Technologies I've mastered and frequently use:
-//         </p>
-//       </div>
-
-//       {/* Skills Circle */}
-//       <div className="flex justify-center items-center">
-//         <div className="relative w-[90vw] max-w-xs sm:max-w-md md:max-w-lg aspect-square bg-gradient-to-br from-gray-800 via-slate-600 to-slate-800 shadow-lg rounded-full flex justify-center items-center p-6">
-//           {/* Center Text */}
-//           <div className="absolute text-white text-center">
-//             <h2 className="text-lg sm:text-2xl font-bold">Technologies</h2>
-//             <p className="text-xs sm:text-sm opacity-80">Mastered Technologies</p>
-//           </div>
-
-//           {/* Icons Positioned Around the Circle */}
-//           {skills.map((skill, index) => {
-//             const angle = (index * (360 / skills.length)) * (Math.PI / 180);
-//             const radius = window.innerWidth < 640 ? 100 : 150; // Dynamic radius based on screen size
-//             const x = Math.cos(angle) * radius;
-//             const y = Math.sin(angle) * radius;
-
-//             return (
-//               <div
-//                 key={index}
-//                 className="absolute flex flex-col items-center"
-//                 style={{
-//                   transform: `translate(${x}px, ${y}px)`,
-//                 }}
-//               >
-//                 <div className="group relative p-4 rounded-full shadow-lg hover:scale-110 transition-all duration-300 transform hover:rotate-8 hover:shadow-blue-600">
-//                   <img className="w-10 sm:w-12 h-10 sm:h-12" src={skill.icon} alt={skill.name} />
-//                 </div>
-//                 <p className="text-xs sm:text-sm text-white mt-2">{skill.name}</p>
-//               </div>
-//             );
-//           })}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Skills;
-
-
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaCode, FaPalette, FaCloud, FaTools, FaDatabase, FaMobile } from "react-icons/fa";
 import aws from "../assets/aws.png";
 import github from "../assets/github.png";
 import HTML from "../assets/html.png";
@@ -181,136 +14,212 @@ import typescript from "../assets/typescript.svg";
 import figma from "../assets/figma.svg";
 import webflow from "../assets/webflow.jpg";
 
-const skills = [
-  { name: "HTML", icon: HTML },
-  { name: "CSS", icon: CSS },
-  { name: "JavaScript", icon: JavaScript },
-  { name: "React", icon: react },
-  { name: "Next.js", icon: nextjs },
-  { name: "Node.js", icon: node },
-  { name: "TypeScript", icon: typescript },
-  { name: "AWS", icon: aws },
-  { name: "GitHub", icon: github },
-  { name: "Tailwind", icon: tailwind },
-  { name: "Figma", icon: figma },
-  { name: "Webflow", icon: webflow },
+const skillCategories = [
+  {
+    name: "Frontend Development",
+    icon: <FaCode />,
+    color: "from-blue-500 to-cyan-500",
+    skills: [
+      { name: "HTML", icon: HTML, level: 95, description: "Semantic markup and web structure" },
+      { name: "CSS", icon: CSS, level: 90, description: "Styling and responsive design" },
+      { name: "JavaScript", icon: JavaScript, level: 88, description: "Dynamic web functionality" },
+      { name: "React", icon: react, level: 92, description: "Component-based UI development" },
+      { name: "Next.js", icon: nextjs, level: 85, description: "Full-stack React framework" },
+      { name: "TypeScript", icon: typescript, level: 80, description: "Typed JavaScript superset" },
+    ]
+  },
+  {
+    name: "Backend & Database",
+    icon: <FaDatabase />,
+    color: "from-green-500 to-emerald-500",
+    skills: [
+      { name: "Node.js", icon: node, level: 85, description: "Server-side JavaScript runtime" },
+      { name: "MongoDB", icon: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg", level: 82, description: "NoSQL database management" },
+      { name: "Express.js", icon: "https://cdn.worldvectorlogo.com/logos/express-109.svg", level: 80, description: "Web application framework" },
+    ]
+  },
+  {
+    name: "Cloud & DevOps",
+    icon: <FaCloud />,
+    color: "from-orange-500 to-red-500",
+    skills: [
+      { name: "AWS", icon: aws, level: 78, description: "Cloud computing services" },
+      { name: "GitHub", icon: github, level: 90, description: "Version control and collaboration" },
+      { name: "Docker", icon: "https://cdn.worldvectorlogo.com/logos/docker.svg", level: 75, description: "Containerization platform" },
+    ]
+  },
+  {
+    name: "Design & Tools",
+    icon: <FaPalette />,
+    color: "from-purple-500 to-pink-500",
+    skills: [
+      { name: "Tailwind CSS", icon: tailwind, level: 88, description: "Utility-first CSS framework" },
+      { name: "Figma", icon: figma, level: 85, description: "Design and prototyping tool" },
+      { name: "Webflow", icon: webflow, level: 80, description: "No-code web design platform" },
+    ]
+  }
 ];
 
-const Skills = () => {
+const SkillCard = ({ skill, index }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <div
-      id="skills"
-      className="w-full min-h-screen bg-gradient-to-br from-black via-blue-700 to-purple-700 py-20 px-4 relative"
+    <motion.div
+      className="group relative bg-gradient-to-br from-gray-900/50 to-gray-800/50 backdrop-blur-sm border border-white/10 hover:border-white/20 rounded-2xl p-6 transition-all duration-300"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        delay: index * 0.1,
+        duration: 0.6
+      }}
+      whileHover={{ y: -5 }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-          <div className="text-center mt-16 flex flex-col items-start justify-center">
-        <div className="text-5xl text-white border-b-4 border-blue-500">
-          My Skills
+      {/* Skill Icon */}
+      <div className="flex items-center gap-4 mb-4">
+        <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
+          <img
+            src={skill.icon}
+            alt={skill.name}
+            className="w-8 h-8 object-contain"
+            loading="lazy"
+          />
         </div>
-        <p className="text-lg text-gray-300 mt-2">
-          Technologies I work with:
-        </p>
-      </div>
-  
-      {/* Desktop - Circular Skill Layout */}
-      <div className="hidden md:flex justify-center relative w-full h-[600px]">
-        {/* Background Circle for Skills */}
-        <div className="absolute w-[600px] h-[600px] bg-gradient-to-br from-gray-700 via-slate-600 to-slate-800 shadow-lg rounded-full">
-          
-          {/* Circle Content (Skills) */}
-          {skills.map((skill, index) => (
-            <motion.div
-              key={index}
-              className="absolute w-40 h-40 bg-white/10 backdrop-blur-md border border-white/20 rounded-es-3xl flex justify-center items-center shadow-lg group"
-              style={{
-                top: `${50 + 50 * Math.sin((index / skills.length) * 2 * Math.PI)}%`,
-                left: `${50 + 50 * Math.cos((index / skills.length) * 2 * Math.PI)}%`,
-                transform: `translate(-50%, -50%)`,
-              }}
-              animate={{
-                boxShadow: [
-                  "0 0 15px rgba(255, 255, 255, 0.4)",
-                  "0 0 30px rgba(255, 255, 255, 0.8)",
-                  "0 0 15px rgba(255, 255, 255, 0.4)",
-                ],
-              }}
-              transition={{
-                repeat: Infinity,
-                duration: 2,
-                ease: "easeInOut", // Smooth transition for shining
-              }}
-            >
-              
-              <img src={skill.icon} alt={skill.name} className="w-12 h-12 object-contain" />
-              {/* Name Visible on Shine */}
-              <motion.div
-                className="absolute top-[70%] left-[50%] transform -translate-x-1/2 text-center text-white opacity-0 group-hover:opacity-100"
-                style={{
-                  fontSize: "14px",
-                  padding: "4px",
-                  whiteSpace: "nowrap",
-                }}
-                animate={{
-                  opacity: [0, 1, 0],
-                }}
-                transition={{
-                  duration: 2,
-                  ease: "easeInOut",
-                  repeat: Infinity,
-                  repeatDelay: 1,
-                }}
-              >
-                {skill.name}
-              </motion.div>
-            </motion.div>
-            
-          ))}
+        <div>
+          <h4 className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors duration-300">
+            {skill.name}
+          </h4>
+          <p className="text-sm text-gray-400">{skill.description}</p>
         </div>
-        
       </div>
 
-      {/* Mobile - Floating Cards with Shine Effect */}
-      <div className="md:hidden grid grid-cols-2 gap-8 max-w-3xl relative">
-        {skills.map((skill, index) => (
+      {/* Progress Bar */}
+      <div className="mb-3">
+        <div className="flex justify-between text-sm text-gray-300 mb-2">
+          <span>Proficiency</span>
+          <span>{skill.level}%</span>
+        </div>
+        <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
           <motion.div
-            key={index}
-            className="relative flex flex-col items-center justify-center p-6 rounded-lg shadow-xl bg-gray-900/80 border border-blue-500 hover:shadow-blue-500 transition-all duration-300 backdrop-blur-lg group"
-            animate={{
-              boxShadow: [
-                "0 0 10px rgba(255, 255, 255, 0.4)",
-                "0 0 20px rgba(255, 255, 255, 1)",
-                "0 0 10px rgba(255, 255, 255, 0.4)",
-              ],
-            }}
+            className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"
+            initial={{ width: 0 }}
+            animate={{ width: `${skill.level}%` }}
             transition={{
-              repeat: Infinity,
-              duration: 1.5,
-              ease: "easeInOut",
+              delay: 0.5 + index * 0.1,
+              duration: 1,
+              ease: "easeOut"
             }}
-          >
-            <motion.img
-              src={skill.icon}
-              alt={skill.name}
-              className="w-16 h-16 object-contain mb-3"
-            />
-            {/* Name Visible on Shine */}
-            <motion.div
-              className="text-center text-white opacity-0 group-hover:opacity-100 mt-4 text-sm"
-              animate={{
-                opacity: [0, 1, 0],
-              }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                repeat: Infinity,
-                repeatDelay: 1,
-              }}
-            >
-              {skill.name}
-            </motion.div>
-          </motion.div>
-        ))}
+          />
+        </div>
       </div>
-    </div>
+
+      {/* Hover Glow Effect */}
+      <motion.div
+        className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isHovered ? 1 : 0 }}
+      />
+    </motion.div>
+  );
+};
+
+const Skills = () => {
+  const [activeCategory, setActiveCategory] = useState(0);
+
+  return (
+    <section
+      id="skills"
+      className="w-full min-h-screen bg-gradient-to-br from-black via-blue-700 to-purple-700 py-20 relative"
+      aria-labelledby="skills-heading"
+    >
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[length:20px_20px]"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Section Header */}
+        <motion.div
+          className="text-center text-white mb-16"
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2
+            id="skills-heading"
+            className="text-4xl md:text-5xl font-bold mb-6"
+          >
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+              My Skills
+            </span>
+          </h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            A comprehensive overview of my technical expertise and proficiency levels across various technologies and tools.
+          </p>
+        </motion.div>
+
+        {/* Category Tabs */}
+        <motion.div
+          className="flex flex-wrap justify-center gap-4 mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          {skillCategories.map((category, index) => (
+            <motion.button
+              key={index}
+              onClick={() => setActiveCategory(index)}
+              className={`flex items-center gap-3 px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+                activeCategory === index
+                  ? `bg-gradient-to-r ${category.color} text-white shadow-lg`
+                  : "bg-white/10 backdrop-blur-sm border border-white/20 text-gray-300 hover:bg-white/20 hover:border-white/30"
+              }`}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {category.icon}
+              {category.name}
+            </motion.button>
+          ))}
+        </motion.div>
+
+        {/* Skills Grid */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeCategory}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+          >
+            {skillCategories[activeCategory].skills.map((skill, index) => (
+              <SkillCard key={index} skill={skill} index={index} />
+            ))}
+          </motion.div>
+        </AnimatePresence>
+
+        {/* Additional Info */}
+        <motion.div
+          className="mt-16 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          <div className="glass-card rounded-2xl p-8 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Always Learning & Growing
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              I'm constantly expanding my skill set and staying up-to-date with the latest technologies. 
+              My passion for learning drives me to explore new frameworks, tools, and methodologies 
+              to deliver the best possible solutions for every project.
+            </p>
+          </div>
+        </motion.div>
+      </div>
+    </section>
   );
 };
 

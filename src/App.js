@@ -1,42 +1,64 @@
- import React from "react";
- import Navbar from "./components/Navbar";
- import Home from "./components/Home";
- import About from "./components/About";
- import Skills from "./components/Skills";
- import Projects from "./components/Projects.jsx";
- import Contact from "./components/Contact";
- import Footer from "./components/Footer.jsx";
-// import Footer from "./components/Footer";
+import React from "react";
+import { HelmetProvider } from "react-helmet-async";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects.jsx";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer.jsx";
 import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
- import './index.css'
- import { useEffect } from "react";
- import { animateScroll as scroll } from "react-scroll";
+import SEO from "./components/SEO.jsx";
+import ErrorBoundary from "./components/ErrorBoundary.jsx";
+import './index.css'
+import { useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
 
-
-
- function App() {
-
+function App() {
   useEffect(() => {
     scroll.scrollToTop();
   }, []);
-   return (
-     <div>
-       <Navbar />
 
-       <Home />
+  return (
+    <ErrorBoundary>
+      <HelmetProvider>
+        <SEO />
+        <div className="min-h-screen">
+          <header>
+            <Navbar />
+          </header>
+          
+          <main role="main">
+            <section id="home" aria-label="Home">
+              <Home />
+            </section>
 
-       <About />
+            <section id="about" aria-label="About">
+              <About />
+            </section>
 
-       <Skills />
+            <section id="skills" aria-label="Skills">
+              <Skills />
+            </section>
 
-       <Projects />
+            <section id="projects" aria-label="Projects">
+              <Projects />
+            </section>
 
-       <Contact />
+            <section id="contact" aria-label="Contact">
+              <Contact />
+            </section>
+          </main>
 
-       <Footer />
-       <ScrollToTopButton />
-     </div>
-   );
- }
+          <footer>
+            <Footer />
+          </footer>
+          
+          <ScrollToTopButton />
+        </div>
+      </HelmetProvider>
+    </ErrorBoundary>
+  );
+}
 
- export default App;
+export default App;
