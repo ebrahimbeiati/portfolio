@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion"; 
-import { FaEye, FaCode, FaRocket, FaFilter } from "react-icons/fa";
+import { FaEye, FaCode, FaRocket } from "react-icons/fa";
 import Shopping from "../assets/screenshots/Shopping.png";
 import Article from "../assets/screenshots/Article.png";
 import CodeFlash from "../assets/screenshots/CodeFlash.png";

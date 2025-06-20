@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaCode, FaPalette, FaCloud, FaTools, FaDatabase, FaMobile } from "react-icons/fa";
+import { FaCode, FaPalette, FaCloud, FaDatabase } from "react-icons/fa";
 import aws from "../assets/aws.png";
 import github from "../assets/github.png";
 import HTML from "../assets/html.png";
