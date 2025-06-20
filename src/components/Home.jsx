@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { HiArrowNarrowRight, HiDownload, HiMail } from "react-icons/hi";
+import { HiArrowNarrowRight, HiDownload } from "react-icons/hi";
 import { Link } from "react-scroll";
 import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import Lottie from "lottie-react";
