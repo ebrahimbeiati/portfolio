@@ -7,6 +7,7 @@ import CodeFlash from "../assets/screenshots/CodeFlash.png";
 import Portfolio from "../assets/screenshots/Portfolio.png";
 import Realestate from "../assets/screenshots/Realestate.png";
 import foodLover from "../assets/screenshots/foodLover.png";
+import Inventory from "../assets/screenshots/Inventory.png";
 
 const projects = [
   {
@@ -70,6 +71,16 @@ const projects = [
     codeLink: "https://github.com/ebrahimbeiati/portfolio",
     technologies: ["React", "TailwindCSS", "Framer Motion", "JavaScript"],
     category: "Portfolio"
+  },
+  {
+    title: "Inventory Management System",
+    description:
+      "Modern inventory management system with real-time updates and user-friendly interface.Built with next.js, tailwindcss, framer motion, and javascript. and deploy on AWS",
+    image: Inventory,
+    demoLink: "https://main.dw208kfpqmykz.amplifyapp.com/dashboard",
+    codeLink: "https://github.com/ebrahimbeiati/inventory-management",
+    technologies: [ "Next.js", "TailwindCSS", "Framer Motion", "JavaScript", "AWS"],
+    category: "E-commerce"
   },
 ];
 
