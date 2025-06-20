@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion"; 
 import Shopping from "../assets/screenshots/Shopping.png";
 import Article from "../assets/screenshots/Article.png";
-import Movie from "../assets/screenshots/Movie.png";
+import CodeFlash from "../assets/screenshots/CodeFlash.png";
 import Portfolio from "../assets/screenshots/Portfolio.png";
 import Realestate from "../assets/screenshots/Realestate.png";
 import foodLover from "../assets/screenshots/foodLover.png";
@@ -33,12 +33,12 @@ const projects = [
     codeLink: "https://github.com/ebrahimbeiati/real-estate-app",
   },
   {
-    title: "Movie finder",
+    title: "Code Flash",
     description:
-      "Discover and explore a vast collection of movies with this movie finder app. Search for your favorite films, get details, and enjoy a personalized movie-watching experience.",
-    image: Movie,
-    demoLink: "https://delightful-figolla-18f1cc.netlify.app/",
-    codeLink: "https://github.com/ebrahimbeiati/alltube",
+      "Code Flash is a platform that allows users to learn and practice coding through interactive coding challenges. It's a great way to improve your coding skills and get hands-on experience with real-world coding problems.",
+    image: CodeFlash,
+    demoLink: "https://codeflash1.netlify.app/",
+    codeLink: "https://github.com/ebrahimbeiati/codeFlash",
   },
   {
     title: "Article summarizer",
