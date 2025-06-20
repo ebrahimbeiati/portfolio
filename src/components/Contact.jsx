@@ -83,12 +83,12 @@ const Contact = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[length:20px_20px]"></div>
       </div>
 
-      {/* Lottie Animation - Centered */}
+      {/* Lottie Animation - Above Header */}
       <motion.div
-        className="absolute top-4 left-1/2 transform -translate-x-1/2 z-0 opacity-20"
+        className="flex justify-center mb-8 md:mb-12"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 1.2, duration: 0.8 }}
+        transition={{ delay: 0.5, duration: 0.8 }}
       >
         <Lottie
           animationData={contactAvatar}
