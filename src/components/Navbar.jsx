@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import React from "react";
-import { FaBars, FaTimes, FaSun, FaMoon, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaBars, FaTimes, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Logo from "../assets/Logo.png";
 import { Link } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [isDark, setIsDark] = useState(true);
   const [scrolled, setScrolled] = useState(false);
   
   const handleClick = () => setNav(!nav);
@@ -88,7 +87,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Right Section - Theme Toggle & Social Links */}
+          {/* Right Section - Social Links */}
           <div className="hidden md:flex items-center space-x-4">
             {/* Social Links */}
             {socialLinks.map((social, index) => (
@@ -108,42 +107,6 @@ const Navbar = () => {
                 {social.icon}
               </motion.a>
             ))}
-
-            {/* Theme Toggle */}
-            <motion.button
-              onClick={() => setIsDark(!isDark)}
-              className="p-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-gray-300 hover:text-white transition-all duration-300"
-              whileHover={{ scale: 1.1, rotate: 180 }}
-              whileTap={{ scale: 0.9 }}
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.8 }}
-              aria-label="Toggle theme"
-            >
-              <AnimatePresence mode="wait">
-                {isDark ? (
-                  <motion.div
-                    key="sun"
-                    initial={{ rotate: -90, opacity: 0 }}
-                    animate={{ rotate: 0, opacity: 1 }}
-                    exit={{ rotate: 90, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <FaSun />
-                  </motion.div>
-                ) : (
-                  <motion.div
-                    key="moon"
-                    initial={{ rotate: 90, opacity: 0 }}
-                    animate={{ rotate: 0, opacity: 1 }}
-                    exit={{ rotate: -90, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <FaMoon />
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.button>
           </div>
 
           {/* Mobile Menu Button */}
