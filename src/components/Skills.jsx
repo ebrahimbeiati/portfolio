@@ -20,44 +20,125 @@ const skillCategories = [
     icon: <FaCode />,
     color: "from-blue-500 to-cyan-500",
     skills: [
-      { name: "HTML", icon: HTML, level: 95, description: "Semantic markup and web structure" },
-      { name: "CSS", icon: CSS, level: 90, description: "Styling and responsive design" },
-      { name: "JavaScript", icon: JavaScript, level: 88, description: "Dynamic web functionality" },
-      { name: "React", icon: react, level: 92, description: "Component-based UI development" },
-      { name: "Next.js", icon: nextjs, level: 85, description: "Full-stack React framework" },
-      { name: "TypeScript", icon: typescript, level: 80, description: "Typed JavaScript superset" },
-    ]
+      {
+        name: "HTML",
+        icon: HTML,
+        level: 95,
+        description: "Semantic markup and web structure",
+      },
+      {
+        name: "CSS",
+        icon: CSS,
+        level: 90,
+        description: "Styling and responsive design",
+      },
+      {
+        name: "JavaScript",
+        icon: JavaScript,
+        level: 88,
+        description: "Dynamic web functionality",
+      },
+      {
+        name: "React",
+        icon: react,
+        level: 92,
+        description: "Component-based UI development",
+      },
+      {
+        name: "Next.js",
+        icon: nextjs,
+        level: 85,
+        description: "Full-stack React framework",
+      },
+      {
+        name: "TypeScript",
+        icon: typescript,
+        level: 80,
+        description: "Typed JavaScript superset",
+      },
+    ],
   },
   {
     name: "Backend & Database",
     icon: <FaDatabase />,
     color: "from-green-500 to-emerald-500",
     skills: [
-      { name: "Node.js", icon: node, level: 85, description: "Server-side JavaScript runtime" },
-      { name: "MongoDB", icon: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg", level: 82, description: "NoSQL database management" },
-      { name: "Express.js", icon: "https://cdn.worldvectorlogo.com/logos/express-109.svg", level: 80, description: "Web application framework" },
-    ]
+      {
+        name: "Python",
+        icon: "https://cdn.worldvectorlogo.com/logos/python-5.svg",
+        level: 78,
+        description: "Backend development and scripting",
+      },
+      {
+        name: "Node.js",
+        icon: node,
+        level: 85,
+        description: "Server-side JavaScript runtime",
+      },
+      {
+        name: "MongoDB",
+        icon: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
+        level: 82,
+        description: "NoSQL database management",
+      },
+      {
+        name: "Express.js",
+        icon: "https://cdn.worldvectorlogo.com/logos/express-109.svg",
+        level: 80,
+        description: "Web application framework",
+      },
+    ],
   },
   {
     name: "Cloud & DevOps",
     icon: <FaCloud />,
     color: "from-orange-500 to-red-500",
     skills: [
-      { name: "AWS", icon: aws, level: 78, description: "Cloud computing services" },
-      { name: "GitHub", icon: github, level: 90, description: "Version control and collaboration" },
-      { name: "Docker", icon: "https://cdn.worldvectorlogo.com/logos/docker.svg", level: 75, description: "Containerization platform" },
-    ]
+      {
+        name: "AWS",
+        icon: aws,
+        level: 78,
+        description: "Cloud computing services",
+      },
+      {
+        name: "GitHub",
+        icon: github,
+        level: 90,
+        description: "Version control and collaboration",
+      },
+      {
+        name: "Docker",
+        icon: "https://cdn.worldvectorlogo.com/logos/docker.svg",
+        level: 75,
+        description: "Containerization platform",
+      },
+    ],
   },
   {
     name: "Design & Tools",
     icon: <FaPalette />,
     color: "from-purple-500 to-pink-500",
     skills: [
-      { name: "Tailwind CSS", icon: tailwind, level: 88, description: "Utility-first CSS framework" },
-      { name: "Figma", icon: figma, level: 85, description: "Design and prototyping tool" },
-      { name: "Webflow", icon: webflow, level: 80, description: "No-code web design platform" },
-    ]
-  }
+      {
+        name: "Tailwind CSS",
+        icon: tailwind,
+        level: 88,
+        description: "Utility-first CSS framework",
+      },
+      {
+        name: "Figma",
+        icon: figma,
+        level: 85,
+        description: "Design and prototyping tool",
+      },
+      {
+        name: "Webflow",
+        icon: webflow,
+        level: 80,
+        description: "No-code web design platform",
+      },
+    ],
+  },
 ];
 
 const SkillCard = ({ skill, index }) => {
@@ -70,7 +151,7 @@ const SkillCard = ({ skill, index }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{
         delay: index * 0.1,
-        duration: 0.6
+        duration: 0.6,
       }}
       whileHover={{ y: -5 }}
       onMouseEnter={() => setIsHovered(true)}
@@ -108,7 +189,7 @@ const SkillCard = ({ skill, index }) => {
             transition={{
               delay: 0.5 + index * 0.1,
               duration: 1,
-              ease: "easeOut"
+              ease: "easeOut",
             }}
           />
         </div>
@@ -155,7 +236,8 @@ const Skills = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            A comprehensive overview of my technical expertise and proficiency levels across various technologies and tools.
+            A comprehensive overview of my technical expertise and proficiency
+            levels across various technologies and tools.
           </p>
         </motion.div>
 
@@ -212,9 +294,10 @@ const Skills = () => {
               Always Learning & Growing
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              I'm constantly expanding my skill set and staying up-to-date with the latest technologies. 
-              My passion for learning drives me to explore new frameworks, tools, and methodologies 
-              to deliver the best possible solutions for every project.
+              I'm constantly expanding my skill set and staying up-to-date with
+              the latest technologies. My passion for learning drives me to
+              explore new frameworks, tools, and methodologies to deliver the
+              best possible solutions for every project.
             </p>
           </div>
         </motion.div>

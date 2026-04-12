@@ -1,25 +1,39 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion"; 
+import { motion, AnimatePresence } from "framer-motion";
 import { FaEye, FaCode, FaRocket } from "react-icons/fa";
-import Shopping from "../assets/screenshots/Shopping.png";
-import Article from "../assets/screenshots/Article.png";
-import CodeFlash from "../assets/screenshots/CodeFlash.png";
-import Portfolio from "../assets/screenshots/Portfolio.png";
-import Realestate from "../assets/screenshots/Realestate.png";
-import foodLover from "../assets/screenshots/foodLover.png";
-import Inventory from "../assets/screenshots/Inventory.png";
+import PropTypes from "prop-types";
+import Animated from "../assets/project-screenshots/Animated-Web.png";
+import Article from "../assets/project-screenshots/Article.png";
+import CodeFlash from "../assets/project-screenshots/CodeFlash.png";
+import Portfolio from "../assets/project-screenshots/Portfolio.png";
+import Realestate from "../assets/project-screenshots/Realestate.png";
+import foodLover from "../assets/project-screenshots/foodLover.png";
+import Inventory from "../assets/project-screenshots/Inventory.png";
+import portfolio_analytics from "../assets/project-screenshots/portfolio_analytics.png";
 
 const projects = [
   {
-    title: "Online Shopping",
+    title: "Animated Web",
     description:
-      "A modern e-commerce platform with seamless user experience, secure payments, and responsive design.",
-    image: Shopping,
-    demoLink: "https://chimerical-sopapillas-8538be.netlify.app/",
-    codeLink: "https://github.com/ebrahimbeiati/online-shopping",
+      "A modern animated web with smooth animations and responsive design.",
+
+    image: Animated,
+    demoLink: "https://animated-web1.netlify.app/",
+    codeLink: "https://github.com/ebrahimbeiati/animated-web.git",
     technologies: ["React", "Node.js", "MongoDB", "Express"],
     category: "E-commerce",
-    featured: true
+    featured: true,
+  },
+  {
+    title: "Portfolio Analytics",
+    description:
+      "A portfolio analytics dashboard that provides insights into project performance and user engagement.",
+    image: portfolio_analytics,
+    demoLink: "https://portfolio-analytics-1.netlify.app/",
+    codeLink: "https://github.com/ebrahimbeiati/portfolio-analytics",
+    technologies: ["React", "Charts", "TailwindCSS", "JavaScript"],
+    category: "Analytics",
+    featured: false,
   },
   {
     title: "Real-Estate Platform",
@@ -30,7 +44,7 @@ const projects = [
     codeLink: "https://github.com/ebrahimbeiati/real-estate-app",
     technologies: ["Vite", "TailwindCSS", "MongoDB", "Firebase"],
     category: "Real Estate",
-    featured: true
+    featured: true,
   },
   {
     title: "Code Flash",
@@ -40,7 +54,7 @@ const projects = [
     demoLink: "https://codeflash1.netlify.app/",
     codeLink: "https://github.com/ebrahimbeiati/codeFlash",
     technologies: ["React", "JavaScript", "CSS3", "HTML5"],
-    category: "Education"
+    category: "Education",
   },
   {
     title: "Great Restaurant",
@@ -50,7 +64,7 @@ const projects = [
     demoLink: "https://great-restaurant-me.netlify.app/",
     codeLink: "https://github.com/ebrahimbeiati/great-restaurant",
     technologies: ["React", "CSS3", "JavaScript", "HTML5"],
-    category: "Food & Dining"
+    category: "Food & Dining",
   },
   {
     title: "AI Article Summarizer",
@@ -60,7 +74,7 @@ const projects = [
     demoLink: "https://article-summarizer-ai2.netlify.app/",
     codeLink: "https://github.com/ebrahimbeiati/article-summarizer",
     technologies: ["React", "AI Integration", "JavaScript", "CSS3"],
-    category: "AI Tools"
+    category: "AI Tools",
   },
   {
     title: "Portfolio Website",
@@ -70,7 +84,7 @@ const projects = [
     demoLink: "/",
     codeLink: "https://github.com/ebrahimbeiati/portfolio",
     technologies: ["React", "TailwindCSS", "Framer Motion", "JavaScript"],
-    category: "Portfolio"
+    category: "Portfolio",
   },
   {
     title: "Inventory Management System",
@@ -79,13 +93,21 @@ const projects = [
     image: Inventory,
     demoLink: "https://main.dw208kfpqmykz.amplifyapp.com/dashboard",
     codeLink: "https://github.com/ebrahimbeiati/inventory-management",
-    technologies: [ "Next.js", "TailwindCSS", "Framer Motion", "JavaScript", "AWS"],
-    category: "E-commerce"
+    technologies: [
+      "Next.js",
+      "TailwindCSS",
+      "Framer Motion",
+      "JavaScript",
+      "AWS",
+    ],
+    category: "E-commerce",
   },
 ];
 
 const ProjectCard = ({ project, index }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const technologies = project.technologies ?? [];
+  const category = project.category ?? "General";
 
   return (
     <motion.article
@@ -95,7 +117,7 @@ const ProjectCard = ({ project, index }) => {
       transition={{
         delay: index * 0.1,
         duration: 0.6,
-        ease: "easeOut"
+        ease: "easeOut",
       }}
       whileHover={{ y: -10 }}
       onMouseEnter={() => setIsHovered(true)}
@@ -112,10 +134,10 @@ const ProjectCard = ({ project, index }) => {
           }}
           transition={{ duration: 0.3 }}
         />
-        
+
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-        
+
         {/* Featured Badge */}
         {project.featured && (
           <motion.div
@@ -130,7 +152,7 @@ const ProjectCard = ({ project, index }) => {
 
         {/* Category Badge */}
         <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
-          {project.category}
+          {category}
         </div>
       </div>
 
@@ -139,14 +161,14 @@ const ProjectCard = ({ project, index }) => {
         <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">
           {project.title}
         </h3>
-        
+
         <p className="text-gray-300 text-sm mb-4 leading-relaxed">
           {project.description}
         </p>
 
         {/* Technologies */}
         <div className="flex flex-wrap gap-2 mb-6">
-          {project.technologies.map((tech, techIndex) => (
+          {technologies.map((tech, techIndex) => (
             <span
               key={techIndex}
               className="px-3 py-1 bg-blue-600/20 text-blue-300 text-xs rounded-full border border-blue-500/30"
@@ -169,7 +191,7 @@ const ProjectCard = ({ project, index }) => {
             <FaEye />
             Live Demo
           </motion.a>
-          
+
           <motion.a
             href={project.codeLink}
             target="_blank"
@@ -197,10 +219,9 @@ const ProjectCard = ({ project, index }) => {
 const Projects = React.memo(() => {
   const [filter, setFilter] = useState("all");
 
-  const categories = ["all", ...new Set(projects.map(p => p.category))];
-  const filteredProjects = filter === "all" 
-    ? projects 
-    : projects.filter(p => p.category === filter);
+  const categories = ["all", ...new Set(projects.map((p) => p.category))];
+  const filteredProjects =
+    filter === "all" ? projects : projects.filter((p) => p.category === filter);
 
   return (
     <section
@@ -225,7 +246,8 @@ const Projects = React.memo(() => {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Explore my latest work and creative solutions that showcase my passion for building exceptional digital experiences.
+            Explore my latest work and creative solutions that showcase my
+            passion for building exceptional digital experiences.
           </p>
         </motion.div>
 
@@ -264,7 +286,11 @@ const Projects = React.memo(() => {
             transition={{ duration: 0.3 }}
           >
             {filteredProjects.map((project, index) => (
-              <ProjectCard key={index} project={project} index={index} />
+              <ProjectCard
+                key={project.title}
+                project={project}
+                index={index}
+              />
             ))}
           </motion.div>
         </AnimatePresence>
@@ -290,6 +316,20 @@ const Projects = React.memo(() => {
   );
 });
 
-Projects.displayName = 'Projects';
+Projects.displayName = "Projects";
 
 export default Projects;
+
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    image: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
+    demoLink: PropTypes.string.isRequired,
+    codeLink: PropTypes.string.isRequired,
+    technologies: PropTypes.arrayOf(PropTypes.string),
+    category: PropTypes.string,
+    featured: PropTypes.bool,
+  }).isRequired,
+  index: PropTypes.number.isRequired,
+};
