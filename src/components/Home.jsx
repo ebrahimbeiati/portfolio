@@ -9,15 +9,47 @@ const Home = () => {
   const [text, setText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   const fullText = "Full-Stack Developer";
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
   // Smooth spring animations for mouse tracking
   const springConfig = { damping: 25, stiffness: 700 };
-  const rotateX = useSpring(useTransform(mouseY, [-0.5, 0.5], [15, -15]), springConfig);
-  const rotateY = useSpring(useTransform(mouseX, [-0.5, 0.5], [-15, 15]), springConfig);
+  const rotateX = useSpring(
+    useTransform(mouseY, [-0.5, 0.5], [15, -15]),
+    springConfig,
+  );
+  const rotateY = useSpring(
+    useTransform(mouseX, [-0.5, 0.5], [-15, 15]),
+    springConfig,
+  );
+// Handle CV download to allow user to be ale to download the CV without opening it in a new tab
+  
+ const cvUrl = process.env.REACT_APP_CV_URL;
+
+const handleDownloadCV = () => {
+    console.log("Download button clicked");
+
+  if (!cvUrl) {
+    console.error("CV URL is not defined");
+    return;
+  }
+
+  // Add timestamp to prevent caching
+  const timestamp = new Date().getTime();
+  const downloadUrl = `${cvUrl}&t=${timestamp}`;
+
+  const link = document.createElement("a");
+  link.href = downloadUrl;
+
+  // Set filename for download
+  link.setAttribute("download", "Ebrahim-CV.pdf");
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
   // Typing animation effect
   useEffect(() => {
@@ -83,7 +115,9 @@ const Home = () => {
           transition={{ delay: 0.2 }}
           className="mb-3 md:mb-4"
         >
-          <span className="text-blue-400 font-medium text-sm md:text-base">Welcome to my world</span>
+          <span className="text-blue-400 font-medium text-sm md:text-base">
+            Welcome to my world
+          </span>
         </motion.div>
 
         <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold mb-3 md:mb-4 leading-tight">
@@ -118,7 +152,9 @@ const Home = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          Passionate about creating smooth and intuitive applications. I specialize in transforming ideas into high-performance solutions using cutting-edge technologies.
+          Passionate about creating smooth and intuitive applications. I
+          specialize in transforming ideas into high-performance solutions using
+          cutting-edge technologies.
         </motion.p>
 
         {/* Enhanced Action Buttons */}
@@ -138,8 +174,8 @@ const Home = () => {
               <HiArrowNarrowRight className="ml-2 md:ml-3 group-hover:translate-x-1 transition-transform duration-300" />
             </motion.button>
           </Link>
-
           <motion.button
+            onClick={handleDownloadCV}
             className="flex items-center justify-center bg-transparent border-2 border-white text-white font-bold px-6 md:px-8 py-3 md:py-4 rounded-full text-sm md:text-lg hover:bg-white hover:text-black transition-all duration-300 group w-full sm:w-auto"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -157,15 +193,23 @@ const Home = () => {
           transition={{ delay: 1.2 }}
         >
           <div className="text-center">
-            <div className="text-xl md:text-2xl font-bold text-blue-400">6+</div>
+            <div className="text-xl md:text-2xl font-bold text-blue-400">
+              6+
+            </div>
             <div className="text-xs md:text-sm text-gray-400">Projects</div>
           </div>
           <div className="text-center">
-            <div className="text-xl md:text-2xl font-bold text-purple-400">3+</div>
-            <div className="text-xs md:text-sm text-gray-400">Years Experience</div>
+            <div className="text-xl md:text-2xl font-bold text-purple-400">
+              3+
+            </div>
+            <div className="text-xs md:text-sm text-gray-400">
+              Years Experience
+            </div>
           </div>
           <div className="text-center">
-            <div className="text-xl md:text-2xl font-bold text-cyan-400">12+</div>
+            <div className="text-xl md:text-2xl font-bold text-cyan-400">
+              12+
+            </div>
             <div className="text-xs md:text-sm text-gray-400">Technologies</div>
           </div>
         </motion.div>
@@ -183,7 +227,7 @@ const Home = () => {
       >
         {/* Glowing background effect */}
         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse" />
-        
+
         <motion.div
           className="relative w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-white/20 backdrop-blur-sm"
           style={{
@@ -193,12 +237,12 @@ const Home = () => {
           }}
           whileHover={{ scale: 1.05 }}
         >
-          <Lottie 
-            animationData={avatarAnimation} 
+          <Lottie
+            animationData={avatarAnimation}
             loop={true}
             className="w-full h-full"
           />
-          
+
           {/* Floating elements around avatar */}
           <motion.div
             className="absolute -top-2 -right-2 md:-top-4 md:-right-4 w-6 h-6 md:w-8 md:h-8 bg-blue-500 rounded-full flex items-center justify-center"
@@ -207,7 +251,7 @@ const Home = () => {
           >
             <span className="text-white text-xs">⚛️</span>
           </motion.div>
-          
+
           <motion.div
             className="absolute -bottom-2 -left-2 md:-bottom-4 md:-left-4 w-6 h-6 md:w-8 md:h-8 bg-purple-500 rounded-full flex items-center justify-center"
             animate={{ y: [0, 10, 0] }}
@@ -223,9 +267,7 @@ const Home = () => {
         className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
-      >
-        
-      </motion.div>
+      ></motion.div>
     </div>
   );
 };
