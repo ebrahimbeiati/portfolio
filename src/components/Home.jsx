@@ -24,32 +24,32 @@ const Home = () => {
     useTransform(mouseX, [-0.5, 0.5], [-15, 15]),
     springConfig,
   );
-// Handle CV download to allow user to be ale to download the CV without opening it in a new tab
-  
- const cvUrl = process.env.REACT_APP_CV_URL;
+  // Handle CV download to allow user to be ale to download the CV without opening it in a new tab
 
-const handleDownloadCV = () => {
+  const cvUrl = process.env.REACT_APP_CV_URL;
+
+  const handleDownloadCV = () => {
     console.log("Download button clicked");
 
-  if (!cvUrl) {
-    console.error("CV URL is not defined");
-    return;
-  }
+    if (!cvUrl) {
+      console.error("CV URL is not defined");
+      return;
+    }
 
-  // Add timestamp to prevent caching
-  const timestamp = new Date().getTime();
-  const downloadUrl = `${cvUrl}&t=${timestamp}`;
+    // Add timestamp to prevent caching
+    const timestamp = new Date().getTime();
+    const downloadUrl = `${cvUrl}&t=${timestamp}`;
 
-  const link = document.createElement("a");
-  link.href = downloadUrl;
+    const link = document.createElement("a");
+    link.href = downloadUrl;
 
-  // Set filename for download
-  link.setAttribute("download", "Ebrahim-CV.pdf");
+    // Set filename for download
+    link.setAttribute("download", "Ebrahim-CV.pdf");
 
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   // Typing animation effect
   useEffect(() => {
@@ -152,9 +152,9 @@ const handleDownloadCV = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          Passionate about creating smooth and intuitive applications. I
-          specialize in transforming ideas into high-performance solutions using
-          cutting-edge technologies.
+          I love turning ideas into meaningful digital experiences, blending
+          strong engineering with creativity and a genuine focus on the people
+          who rely on what I build.
         </motion.p>
 
         {/* Enhanced Action Buttons */}
