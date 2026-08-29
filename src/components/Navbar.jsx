@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 import React from "react";
-import { FaBars, FaTimes, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa";
 import Logo from "../assets/Logo.png";
 import { Link } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
@@ -8,40 +14,52 @@ import { motion, AnimatePresence } from "framer-motion";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  
+
   const handleClick = () => setNav(!nav);
-  
+
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 50;
       setScrolled(isScrolled);
     };
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
     { name: "Home", to: "home" },
+    { name: "Projects", to: "project" },
     { name: "About", to: "about" },
     { name: "Skills", to: "skills" },
-    { name: "Projects", to: "project" },
     { name: "Contact", to: "contact" },
   ];
 
   const socialLinks = [
-    { icon: <FaGithub />, href: "https://github.com/ebrahimbeiati", label: "GitHub" },
-    { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/ebrahim-beiatiasl/", label: "LinkedIn" },
-    { icon: <FaTwitter />, href: "https://twitter.com/ebrahimbeiati", label: "Twitter" },
+    {
+      icon: <FaGithub />,
+      href: "https://github.com/ebrahimbeiati",
+      label: "GitHub",
+    },
+    {
+      icon: <FaLinkedin />,
+      href: "https://www.linkedin.com/in/ebrahim-beiatiasl/",
+      label: "LinkedIn",
+    },
+    {
+      icon: <FaTwitter />,
+      href: "https://twitter.com/ebrahimbeiati",
+      label: "Twitter",
+    },
   ];
 
   return (
     <motion.nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled 
-          ? 'bg-white/10 backdrop-blur-md border-b border-white/20 shadow-lg' 
-          : 'bg-transparent'
+        scrolled
+          ? "bg-white/10 backdrop-blur-md border-b border-white/20 shadow-lg"
+          : "bg-transparent"
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -55,9 +73,9 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <img 
-              src={Logo} 
-              alt="Ebrahim Beiati-Asl Logo" 
+            <img
+              src={Logo}
+              alt="Ebrahim Beiati-Asl Logo"
               className="w-10 h-10 rounded-full shadow-lg"
             />
             <span className="ml-3 text-xl font-bold text-white hidden sm:block">
@@ -173,7 +191,7 @@ const Navbar = () => {
                   </Link>
                 </motion.div>
               ))}
-              
+
               {/* Mobile Social Links */}
               <div className="flex justify-center space-x-4 pt-4 border-t border-white/20">
                 {socialLinks.map((social, index) => (

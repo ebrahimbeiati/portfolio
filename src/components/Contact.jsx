@@ -8,7 +8,7 @@ import {
   FaMapMarkerAlt,
   FaDownload,
   FaGlobe,
-  FaTwitter,
+  // FaTwitter,
 } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Lottie from "lottie-react";
@@ -24,30 +24,30 @@ const Contact = () => {
       color: "from-blue-500 to-cyan-500",
       description: "Send me an email anytime",
     },
-    {
-      icon: <FaPhone />,
-      title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
-      color: "from-green-500 to-emerald-500",
-      description: "Call or text me directly",
-    },
-    {
-      icon: <FaMapMarkerAlt />,
-      title: "Location",
-      value: "Remote / Worldwide",
-      link: null,
-      color: "from-purple-500 to-pink-500",
-      description: "Available for remote work",
-    },
-    {
-      icon: <FaGlobe />,
-      title: "Timezone",
-      value: "EST / UTC-5",
-      link: null,
-      color: "from-orange-500 to-red-500",
-      description: "My working hours",
-    },
+    // {
+    //   icon: <FaPhone />,
+    //   title: "Phone",
+    //   value: "+1 (555) 123-4567",
+    //   link: "tel:+15551234567",
+    //   color: "from-green-500 to-emerald-500",
+    //   description: "Call or text me directly",
+    // },
+    // {
+    //   icon: <FaMapMarkerAlt />,
+    //   title: "Location",
+    //   value: "Remote / Worldwide",
+    //   link: null,
+    //   color: "from-purple-500 to-pink-500",
+    //   description: "Available for remote work",
+    // },
+    // {
+    //   icon: <FaGlobe />,
+    //   title: "Timezone",
+    //   value: "EST / UTC-5",
+    //   link: null,
+    //   color: "from-orange-500 to-red-500",
+    //   description: "My working hours",
+    // },
   ];
 
   const socialLinks = [
@@ -65,20 +65,20 @@ const Contact = () => {
       color: "from-gray-800 to-gray-900",
       description: "Check out my code",
     },
-    {
-      icon: <FaTwitter />,
-      name: "Twitter",
-      url: "https://twitter.com/ebrahimbeiati",
-      color: "from-sky-500 to-blue-500",
-      description: "Follow my updates",
-    },
-    {
-      icon: <BsFillPersonLinesFill />,
-      name: "Resume",
-      url: "https://docs.google.com/document/d/1irEjxDuGbjoot0QqgylYygHa9Ent04D4Deh6ulPIrHw/edit?usp=sharing",
-      color: "from-orange-500 to-red-500",
-      description: "Download my resume",
-    },
+    // {
+    //   icon: <FaTwitter />,
+    //   name: "Twitter",
+    //   url: "https://twitter.com/ebrahimbeiati",
+    //   color: "from-sky-500 to-blue-500",
+    //   description: "Follow my updates",
+    // },
+    // {
+    //   icon: <BsFillPersonLinesFill />,
+    //   name: "Resume",
+    //   url: "https://docs.google.com/document/d/1irEjxDuGbjoot0QqgylYygHa9Ent04D4Deh6ulPIrHw/edit?usp=sharing",
+    //   color: "from-orange-500 to-red-500",
+    //   description: "Download my resume",
+    // },
   ];
 
   return (
@@ -195,7 +195,7 @@ const Contact = () => {
             <div className="glass-card rounded-2xl p-4 md:p-8">
               <h3 className="text-xl md:text-2xl font-bold text-white mb-6 md:mb-8 flex items-center gap-3">
                 <FaDownload className="text-green-400" />
-                Connect & Follow
+                Follow
               </h3>
 
               <div className="grid gap-3 md:gap-4">
@@ -234,7 +234,7 @@ const Contact = () => {
             </div>
 
             {/* Quick Contact Card */}
-            <motion.div
+            {/* <motion.div
               className="glass-card rounded-2xl p-4 md:p-8 text-center"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -255,7 +255,7 @@ const Contact = () => {
                 <FaEnvelope />
                 Send Email
               </motion.a>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </div>
       </div>
