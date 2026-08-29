@@ -1,4 +1,3 @@
-import React from "react";
 import { HelmetProvider } from "react-helmet-async";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -10,7 +9,7 @@ import Footer from "./components/Footer.jsx";
 import ScrollToTopButton from "./components/ScrollToTopButton.jsx";
 import SEO from "./components/SEO.jsx";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
-import './index.css'
+import "./index.css";
 import { useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 
@@ -27,10 +26,14 @@ function App() {
           <header>
             <Navbar />
           </header>
-          
+
           <main role="main">
             <section id="home" aria-label="Home">
               <Home />
+            </section>
+
+            <section id="projects" aria-label="Projects">
+              <Projects />
             </section>
 
             <section id="about" aria-label="About">
@@ -41,10 +44,6 @@ function App() {
               <Skills />
             </section>
 
-            <section id="projects" aria-label="Projects">
-              <Projects />
-            </section>
-
             <section id="contact" aria-label="Contact">
               <Contact />
             </section>
@@ -53,7 +52,7 @@ function App() {
           <footer>
             <Footer />
           </footer>
-          
+
           <ScrollToTopButton />
         </div>
       </HelmetProvider>

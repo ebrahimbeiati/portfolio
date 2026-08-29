@@ -1,63 +1,75 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGraduationCap, FaBook, FaLaptopCode, FaServer, FaCloud, FaRocket, FaStar, FaHeart, FaLightbulb } from "react-icons/fa";
+import {
+  FaGraduationCap,
+  FaBook,
+  FaLaptopCode,
+  FaServer,
+  FaCloud,
+  FaRocket,
+  FaStar,
+  FaHeart,
+  FaLightbulb,
+} from "react-icons/fa";
 
 const timelineData = [
-  { 
-    year: "2019", 
-    icon: <FaGraduationCap />, 
-    title: "First Steps", 
-    description: "Started my journey with HTML, CSS, and JavaScript fundamentals.",
-    color: "from-blue-500 to-cyan-500"
+  {
+    year: "2019",
+    icon: <FaGraduationCap />,
+    title: "First Steps",
+    description:
+      "Started my journey with HTML, CSS, and JavaScript fundamentals.",
+    color: "from-blue-500 to-cyan-500",
   },
-  { 
-    year: "2020", 
-    icon: <FaBook />, 
-    title: "Full-Stack Learning", 
+  {
+    year: "2020",
+    icon: <FaBook />,
+    title: "Full-Stack Learning",
     description: "Built my first complete React & Node.js application.",
-    color: "from-purple-500 to-pink-500"
+    color: "from-purple-500 to-pink-500",
   },
-  { 
-    year: "2021", 
-    icon: <FaServer />, 
-    title: "Backend Mastery", 
+  {
+    year: "2021",
+    icon: <FaServer />,
+    title: "Backend Mastery",
     description: "Deep dive into databases, APIs, and server-side development.",
-    color: "from-green-500 to-emerald-500"
+    color: "from-green-500 to-emerald-500",
   },
-  { 
-    year: "2022", 
-    icon: <FaCloud />, 
-    title: "Cloud & DevOps", 
+  {
+    year: "2022",
+    icon: <FaCloud />,
+    title: "Cloud & DevOps",
     description: "Explored AWS, Docker, and modern deployment practices.",
-    color: "from-orange-500 to-red-500"
+    color: "from-orange-500 to-red-500",
   },
-  { 
-    year: "2023", 
-    icon: <FaLaptopCode />, 
-    title: "Advanced Frontend", 
+  {
+    year: "2023",
+    icon: <FaLaptopCode />,
+    title: "Advanced Frontend",
     description: "Mastered React optimization and modern web technologies.",
-    color: "from-indigo-500 to-purple-500"
+    color: "from-indigo-500 to-purple-500",
   },
-  { 
-    year: "2024", 
-    icon: <FaRocket />, 
-    title: "Scaling Solutions", 
+  {
+    year: "2024",
+    icon: <FaRocket />,
+    title: "Scaling Solutions",
     description: "Building high-performance, scalable web applications.",
-    color: "from-yellow-500 to-orange-500"
+    color: "from-yellow-500 to-orange-500",
   },
-  { 
-    year: "2025+", 
-    icon: <FaStar />, 
-    title: "Future Vision", 
-    description: "Leading innovative projects and mentoring the next generation.",
-    color: "from-pink-500 to-rose-500"
+  {
+    year: "2025+",
+    icon: <FaStar />,
+    title: "Future Vision",
+    description:
+      "Leading innovative projects and mentoring the next generation.",
+    color: "from-pink-500 to-rose-500",
   },
 ];
 
 const About = () => (
   <section
     id="about"
-    className="w-full min-h-screen bg-gradient-to-br from-purple-700 via-black to-blue-700 py-20 relative"
+    className="w-full min-h-screen bg-gradient-to-br from-black via-blue-700 to-purple-700 py-20 relative"
     aria-labelledby="about-heading"
   >
     {/* Background Pattern */}
@@ -73,16 +85,14 @@ const About = () => (
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h2
-          id="about-heading"
-          className="text-4xl md:text-5xl font-bold mb-6"
-        >
+        <h2 id="about-heading" className="text-4xl md:text-5xl font-bold mb-6">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
             About Me
           </span>
         </h2>
         <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-          A passionate Full-Stack Developer with a love for creating innovative solutions and turning ideas into reality.
+          A passionate Full-Stack Developer with a love for creating innovative
+          solutions and turning ideas into reality.
         </p>
       </motion.div>
 
@@ -101,12 +111,15 @@ const About = () => (
               My Passion
             </h3>
             <p className="text-gray-300 leading-relaxed mb-6">
-              I'm passionate about solving complex problems and creating user-centric applications that make a difference. 
-              Every line of code I write is driven by the desire to build something meaningful and impactful.
+              I'm passionate about solving complex problems and creating
+              user-centric applications that make a difference. Every line of
+              code I write is driven by the desire to build something meaningful
+              and impactful.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
-              or sharing knowledge with the developer community.
+              When I'm not coding, you'll find me exploring new technologies,
+              contributing to open-source projects, or sharing knowledge with
+              the developer community.
             </p>
           </div>
 
@@ -118,19 +131,27 @@ const About = () => (
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-gray-300">Clean, maintainable code with best practices</p>
+                <p className="text-gray-300">
+                  Clean, maintainable code with best practices
+                </p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-gray-300">User-first design with exceptional UX</p>
+                <p className="text-gray-300">
+                  User-first design with exceptional UX
+                </p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-gray-300">Scalable architecture for future growth</p>
+                <p className="text-gray-300">
+                  Scalable architecture for future growth
+                </p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-gray-300">Performance optimization and testing</p>
+                <p className="text-gray-300">
+                  Performance optimization and testing
+                </p>
               </div>
             </div>
           </div>
@@ -146,7 +167,7 @@ const About = () => (
           <div className="relative">
             {/* Glow Effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
-            
+
             {/* Profile Image */}
             <motion.div
               className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl"
@@ -168,7 +189,7 @@ const About = () => (
             >
               <span className="text-white text-lg">⚛️</span>
             </motion.div>
-            
+
             <motion.div
               className="absolute -bottom-4 -left-4 w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center shadow-lg"
               animate={{ y: [0, 10, 0] }}
@@ -203,34 +224,46 @@ const About = () => (
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 delay: 0.8 + index * 0.1,
-                duration: 0.6
+                duration: 0.6,
               }}
               whileHover={{ y: -10 }}
             >
               {/* Timeline Card */}
               <div className="glass-card rounded-2xl p-6 h-full relative overflow-hidden">
                 {/* Background Gradient */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-10 group-hover:opacity-20 transition-opacity duration-300`}></div>
-                
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-10 group-hover:opacity-20 transition-opacity duration-300`}
+                ></div>
+
                 {/* Content */}
                 <div className="relative z-10">
                   {/* Icon */}
-                  <div className={`w-16 h-16 bg-gradient-to-br ${item.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <div
+                    className={`w-16 h-16 bg-gradient-to-br ${item.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
+                  >
                     <span className="text-white text-2xl">{item.icon}</span>
                   </div>
 
                   {/* Year */}
-                  <div className="text-2xl font-bold text-white mb-2">{item.year}</div>
+                  <div className="text-2xl font-bold text-white mb-2">
+                    {item.year}
+                  </div>
 
                   {/* Title */}
-                  <h4 className="text-lg font-semibold text-white mb-3">{item.title}</h4>
+                  <h4 className="text-lg font-semibold text-white mb-3">
+                    {item.title}
+                  </h4>
 
                   {/* Description */}
-                  <p className="text-gray-300 text-sm leading-relaxed">{item.description}</p>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
 
                 {/* Hover Glow */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-2xl`}></div>
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-2xl`}
+                ></div>
               </div>
 
               {/* Connection Line (for desktop) */}

@@ -226,7 +226,7 @@ const Projects = React.memo(() => {
   return (
     <section
       name="project"
-      className="w-full min-h-screen bg-gradient-to-br from-blue-700 via-purple-700 to-black py-20"
+      className="w-full min-h-screen bg-gradient-to-br from-purple-700 via-black to-blue-700 py-20"
       aria-labelledby="projects-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -211,7 +211,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="w-full min-h-screen bg-gradient-to-br from-black via-blue-700 to-purple-700 py-20 relative"
+      className="w-full min-h-screen bg-gradient-to-br from-blue-700 via-purple-700 to-black py-20 relative"
       aria-labelledby="skills-heading"
     >
       {/* Background Pattern */}
