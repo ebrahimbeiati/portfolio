@@ -1,16 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  FaLinkedin,
-  FaGithub,
-  FaEnvelope,
-  FaPhone,
-  FaMapMarkerAlt,
-  FaDownload,
-  FaGlobe,
-  // FaTwitter,
-} from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaLinkedin, FaGithub, FaEnvelope, FaDownload } from "react-icons/fa";
 import Lottie from "lottie-react";
 import contactAvatar from "../assets/contactAvatar.json";
 
@@ -24,30 +14,6 @@ const Contact = () => {
       color: "from-blue-500 to-cyan-500",
       description: "Send me an email anytime",
     },
-    // {
-    //   icon: <FaPhone />,
-    //   title: "Phone",
-    //   value: "+1 (555) 123-4567",
-    //   link: "tel:+15551234567",
-    //   color: "from-green-500 to-emerald-500",
-    //   description: "Call or text me directly",
-    // },
-    // {
-    //   icon: <FaMapMarkerAlt />,
-    //   title: "Location",
-    //   value: "Remote / Worldwide",
-    //   link: null,
-    //   color: "from-purple-500 to-pink-500",
-    //   description: "Available for remote work",
-    // },
-    // {
-    //   icon: <FaGlobe />,
-    //   title: "Timezone",
-    //   value: "EST / UTC-5",
-    //   link: null,
-    //   color: "from-orange-500 to-red-500",
-    //   description: "My working hours",
-    // },
   ];
 
   const socialLinks = [
@@ -65,20 +31,6 @@ const Contact = () => {
       color: "from-gray-800 to-gray-900",
       description: "Check out my code",
     },
-    // {
-    //   icon: <FaTwitter />,
-    //   name: "Twitter",
-    //   url: "https://twitter.com/ebrahimbeiati",
-    //   color: "from-sky-500 to-blue-500",
-    //   description: "Follow my updates",
-    // },
-    // {
-    //   icon: <BsFillPersonLinesFill />,
-    //   name: "Resume",
-    //   url: "https://docs.google.com/document/d/1irEjxDuGbjoot0QqgylYygHa9Ent04D4Deh6ulPIrHw/edit?usp=sharing",
-    //   color: "from-orange-500 to-red-500",
-    //   description: "Download my resume",
-    // },
   ];
 
   return (
@@ -232,30 +184,6 @@ const Contact = () => {
                 ))}
               </div>
             </div>
-
-            {/* Quick Contact Card */}
-            {/* <motion.div
-              className="glass-card rounded-2xl p-4 md:p-8 text-center"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 0.8 }}
-            >
-              <h3 className="text-lg md:text-xl font-bold text-white mb-3 md:mb-4">
-                Ready to Start a Project?
-              </h3>
-              <p className="text-gray-300 mb-4 md:mb-6 text-sm md:text-base">
-                Let's discuss your ideas and bring them to life together.
-              </p>
-              <motion.a
-                href="mailto:ebrahimbeiaty@gmail.com"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 text-sm md:text-base"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <FaEnvelope />
-                Send Email
-              </motion.a>
-            </motion.div> */}
           </motion.div>
         </div>
       </div>
